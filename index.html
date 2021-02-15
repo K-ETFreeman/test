@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="./css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  </head>
+  <body>
+    <svg class="icons" width="0" height="0"></svg>
+    <section class="calc-block">
+      <form class="calc" action="">
+        <h2 class="calc__title">Калькулятор стоимости ремонта</h2>
+        <label class="calc__label" for="area1">Площадь санузла (ов), м<sup>2</sup>:</label>
+        <input class="calc__range" id="area1" value="33" min="0" max="50" step="1" oninput="this.style.setProperty(&quot;background-size&quot;, (this.value / this.max * 100) * 2 + &quot;% 2px, 100% 2px&quot;)" type="range" name="area1">
+        <ul class="calc__values">
+          <li><span>0</span></li>
+          <li><span>10</span></li>
+          <li><span>20</span></li>
+          <li><span>30</span></li>
+          <li><span>40</span></li>
+          <li><span>50</span></li>
+        </ul>
+        <label class="calc__label" for="area2">Площадь квартиры (комнаты), м<sup>2</sup>:</label>
+        <input class="calc__range" id="area2" value="165" min="0" max="250" oninput="this.style.setProperty(&quot;background-size&quot;, (this.value / this.max * 100) * 2 + &quot;% 2px, 100% 2px&quot;)" type="range" name="area2">
+        <ul class="calc__values">
+          <li><span>0</span></li>
+          <li><span>50</span></li>
+          <li><span>100</span></li>
+          <li><span>150</span></li>
+          <li><span>200</span></li>
+          <li><span>250</span></li>
+        </ul>
+        <label class="calc__label" for="ceilheight">Высота потолка, м:</label>
+        <input class="calc__range" id="ceilheight" value="5.3" min="0" max="8" step="0.1" oninput="this.style.setProperty(&quot;background-size&quot;, (this.value / this.max * 100) * 2 + &quot;% 2px, 100% 2px&quot;)" type="range" name="ceilheight">
+        <ul class="calc__values">
+          <li><span>0</span></li>
+          <li><span>2,7</span></li>
+          <li><span>3</span></li>
+          <li><span>4</span></li>
+          <li><span>6</span></li>
+          <li><span>8</span></li>
+        </ul>
+        <fieldset class="calc__textinputs"> 
+          <input class="calc__input" type="text" name="renovationType" placeholder="Тип ремонта" required>
+          <input class="calc__input" type="text" name="objectType" placeholder="Тип объекта" required>
+          <input class="calc__input" type="text" name="bathcount" placeholder="Кол-во санузлов" required>
+          <input class="calc__input" type="text" name="materials" placeholder="Материалы" required>
+          <input class="calc__input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="calc__input" type="tel" name="phone" placeholder="Ваш телефон" pattern="[0-9]*" required>
+        </fieldset>
+        <input class="calc__submit" type="submit" value="Получить смету">
+        <div class="calc__filler"></div>
+        <p class="calc__agreement">Нажимая кнопку «Получить смету», Вы соглашаетесь на обработку персональных данных в соответствии с ФЗ «О персональных данных» №152-ФЗ от 27.07.2006 г.</p>
+      </form>
+    </section>
+  </body>
+</html>
