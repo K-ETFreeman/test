@@ -2,57 +2,145 @@
 <html lang="en">
   <head>
     <title>title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
-    <svg class="icons" width="0" height="0"></svg>
-    <section class="calc-block">
-      <form class="calc" action="">
-        <h2 class="calc__title">Калькулятор стоимости ремонта</h2>
-        <label class="calc__label" for="area1">Площадь санузла (ов), м<sup>2</sup>:</label>
-        <input class="calc__range" id="area1" value="33" min="0" max="50" step="1" oninput="this.style.setProperty(&quot;background-size&quot;, (this.value / this.max * 100) * 2 + &quot;% 2px, 100% 2px&quot;)" type="range" name="area1">
-        <ul class="calc__values">
-          <li><span>0</span></li>
-          <li><span>10</span></li>
-          <li><span>20</span></li>
-          <li><span>30</span></li>
-          <li><span>40</span></li>
-          <li><span>50</span></li>
-        </ul>
-        <label class="calc__label" for="area2">Площадь квартиры (комнаты), м<sup>2</sup>:</label>
-        <input class="calc__range" id="area2" value="165" min="0" max="250" oninput="this.style.setProperty(&quot;background-size&quot;, (this.value / this.max * 100) * 2 + &quot;% 2px, 100% 2px&quot;)" type="range" name="area2">
-        <ul class="calc__values">
-          <li><span>0</span></li>
-          <li><span>50</span></li>
-          <li><span>100</span></li>
-          <li><span>150</span></li>
-          <li><span>200</span></li>
-          <li><span>250</span></li>
-        </ul>
-        <label class="calc__label" for="ceilheight">Высота потолка, м:</label>
-        <input class="calc__range" id="ceilheight" value="5.3" min="2" max="7" step=".1" oninput="this.style.setProperty(&quot;background-size&quot;, (this.value / this.max * 100) * 2 + &quot;% 2px, 100% 2px&quot;)" type="range" name="ceilheight">
-        <ul class="calc__values">
-          <li><span>2</span></li>
-          <li><span>3</span></li>
-          <li><span>4</span></li>
-          <li><span>5</span></li>
-          <li><span>6</span></li>
-          <li><span>7</span></li>
-        </ul>
-        <fieldset class="calc__textinputs"> 
-          <input class="calc__input" type="text" name="renovationType" placeholder="Тип ремонта" required>
-          <input class="calc__input" type="text" name="objectType" placeholder="Тип объекта" required>
-          <input class="calc__input" type="text" name="bathcount" placeholder="Кол-во санузлов" required>
-          <input class="calc__input" type="text" name="materials" placeholder="Материалы" required>
-          <input class="calc__input" type="text" name="name" placeholder="Ваше имя" required>
-          <input class="calc__input" type="tel" name="phone" placeholder="Ваш телефон" pattern="[+-0-9 ]*" required>
-        </fieldset>
-        <input class="calc__submit" type="submit" value="Получить смету">
-        <div class="calc__filler"></div>
-        <p class="calc__agreement">Нажимая кнопку «Получить смету», Вы соглашаетесь на обработку персональных данных в соответствии с ФЗ «О персональных данных» №152-ФЗ от 27.07.2006 г.</p>
-      </form>
+    <svg class="icons" width="0" height="0">
+      <symbol id="right" aria-hidden="true" viewbox="0 0 448 512">
+        <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path>
+      </symbol>
+      <symbol id="left" aria-hidden="true" viewbox="0 0 448 512">
+        <path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path>
+      </symbol>
+      <symbol id="next" aria-hidden="true" viewbox="0 0 320 512">
+        <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+      </symbol>
+      <symbol id="prev" aria-hidden="true" viewbox="0 0 320 512">
+        <path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path>
+      </symbol>
+    </svg>
+    <section class="cars">
+      <div class="wrapper"> 
+        <h3 class="cars__title">Наши работы</h3>
+        <div class="cars__swiper">
+          <div class="cars__arrow cars__arrow_prev">
+            <svg viewBox="0 0 320 512"> 
+              <use href="#prev"></use>
+            </svg>
+          </div>
+          <div class="swiper-container cars__container">
+            <div class="swiper-wrapper cars__slides">
+              <div class="swiper-slide work">
+                <div class="work__left">
+                  <div class="work__before"><img src="./img/before.jpg" alt="Машина перед работами">
+                  </div>
+                  <div class="work__after"><img src="./img/after.jpg" alt="Машина после работ">
+                  </div>
+                </div>
+                <div class="work__right">
+                  <h4 class="work__title">Ремонт Porsche Boxster</h4>
+                  <ul class="work__list">
+                    <li> <span>Крыло переднее с/у</span><span>3000₽</span></li>
+                    <li> <span>Крыло переднее покраска</span><span>9500₽</span></li>
+                    <li> <span>Дверь р/с</span><span>3500₽</span></li>
+                    <li> <span>Дверь снятие установка</span><span>2000₽</span></li>
+                    <li> <span>Покраска двери</span><span>9500₽</span></li>
+                    <li> <span>Покраска заднего крыла</span><span>12000₽</span></li>
+                    <li> <span>Р/с заднего крыла</span><span>2500₽</span></li>
+                  </ul>
+                  <div class="work__buttons"> 
+                    <div class="work__button" role="button">
+                      <svg viewBox="0 0 448 512"> 
+                        <use href="#left"></use>
+                      </svg><span>Предыдущая работа</span>
+                    </div>
+                    <div class="work__button" role="button"><span>Следущая работа</span>
+                      <svg viewBox="0 0 448 512"> 
+                        <use href="#right"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide work">
+                <div class="work__left">
+                  <div class="work__before"><img src="./img/before.jpg" alt="Машина перед работами">
+                  </div>
+                  <div class="work__after"><img src="./img/after.jpg" alt="Машина после работ">
+                  </div>
+                </div>
+                <div class="work__right">
+                  <h4 class="work__title">Ремонт Porsche Boxster</h4>
+                  <ul class="work__list">
+                    <li> <span>Крыло переднее с/у</span><span>3000₽</span></li>
+                    <li> <span>Крыло переднее покраска</span><span>9500₽</span></li>
+                    <li> <span>Дверь р/с</span><span>3500₽</span></li>
+                    <li> <span>Дверь снятие установка</span><span>2000₽</span></li>
+                    <li> <span>Покраска двери</span><span>9500₽</span></li>
+                    <li> <span>Покраска заднего крыла</span><span>12000₽</span></li>
+                    <li> <span>Р/с заднего крыла</span><span>2500₽</span></li>
+                  </ul>
+                  <div class="work__buttons"> 
+                    <div class="work__button" role="button">
+                      <svg viewBox="0 0 448 512"> 
+                        <use href="#left"></use>
+                      </svg><span>Предыдущая работа</span>
+                    </div>
+                    <div class="work__button" role="button"><span>Следущая работа</span>
+                      <svg viewBox="0 0 448 512"> 
+                        <use href="#right"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide work">
+                <div class="work__left">
+                  <div class="work__before"><img src="./img/before.jpg" alt="Машина перед работами">
+                  </div>
+                  <div class="work__after"><img src="./img/after.jpg" alt="Машина после работ">
+                  </div>
+                </div>
+                <div class="work__right">
+                  <h4 class="work__title">Ремонт Porsche Boxster</h4>
+                  <ul class="work__list">
+                    <li> <span>Крыло переднее с/у</span><span>3000₽</span></li>
+                    <li> <span>Крыло переднее покраска</span><span>9500₽</span></li>
+                    <li> <span>Дверь р/с</span><span>3500₽</span></li>
+                    <li> <span>Дверь снятие установка</span><span>2000₽</span></li>
+                    <li> <span>Покраска двери</span><span>9500₽</span></li>
+                    <li> <span>Покраска заднего крыла</span><span>12000₽</span></li>
+                    <li> <span>Р/с заднего крыла</span><span>2500₽</span></li>
+                  </ul>
+                  <div class="work__buttons"> 
+                    <div class="work__button" role="button">
+                      <svg viewBox="0 0 448 512"> 
+                        <use href="#left"></use>
+                      </svg><span>Предыдущая работа</span>
+                    </div>
+                    <div class="work__button" role="button"><span>Следущая работа</span>
+                      <svg viewBox="0 0 448 512"> 
+                        <use href="#right"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cars__arrow cars__arrow_next">
+            <svg viewBox="0 0 320 512"> 
+              <use href="#next"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
