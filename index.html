@@ -29,7 +29,8 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="yes" content="yes">
     <link rel="shortcut icon" href="/logosign.svg" type="image/svg">
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/style_test.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/header+popups+footer.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/gallery.css">
     <script>var yaParams = {ip_adress: "<? echo $_SERVER['REMOTE_ADDR'];?>"};</script>
   </head>
   <body>
@@ -293,7 +294,7 @@
     <section class="gallery">
       <div class="container">
         <h3 class="gallery__title">Галерея</h3>
-        <div class="gallery__grid"><img src="assets/images/gallery/thumb/1.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/2.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/3.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/4.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/5.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/6.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/7.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/8.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/9.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/10.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/11.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/12.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"></div>
+        <div class="gallery__grid"><img src="assets/images/gallery/thumb/1.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/2.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/3.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/4.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/5.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/6.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/7.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/8.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/9.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/10.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/11.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/12.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"></div>
       </div>
     </section>
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -447,9 +448,10 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/photoswipe.min.js"></script>
     <script src="assets/js/lazysizes.min.js"></script>
-    <script src="assets/js/script_test.js"></script>
+    <script src="assets/js/photoswipe.min.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/header+popups+footer.js"></script>
     <!-- Yandex.Metrika counter-->
     <script type="text/javascript">
       var fired = false;
