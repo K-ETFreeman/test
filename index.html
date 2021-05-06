@@ -1,482 +1,591 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <!--critical-->
-    <style>@font-face{font-family:'Museo Sans Cyrl';font-display:swap;src:url(assets/fonts/MuseoSansCyrl/300.woff2) format("woff2"),url(assets/fonts/MuseoSansCyrl/300.woff) format("woff");font-weight:300;font-style:normal}@font-face{font-family:'Museo Sans Cyrl';font-display:swap;src:url(assets/fonts/MuseoSansCyrl/900.woff2) format("woff2"),url(assets/fonts/MuseoSansCyrl/900.woff) format("woff");font-weight:900;font-style:normal}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-12,.col-6,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.justify-content-end{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.justify-content-center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.align-items-end{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.align-items-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.align-content-end{-ms-flex-line-pack:end;align-content:flex-end}.align-content-center{-ms-flex-line-pack:center;align-content:center}.mainlogo{width:180px}.icons{position:absolute}html{line-height:1.15;-webkit-text-size-adjust:100%}[type=button],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}body{margin:0;min-height:101vh;font-family:'Museo Sans Cyrl';color:#333;line-height:30px;font-size:18px;font-weight:300}*{outline:0}:active,:focus,:hover{outline:0;outline-offset:0}img{border-style:none;max-width:100%;height:auto;display:block}p{margin:0 0 20px 0;line-height:1.5}p a{color:#0e91f6;text-decoration:underline}p a:hover{text-decoration:none}p:last-child{margin-bottom:0}h1,h2,h3,h4{font-weight:900;line-height:1.4;margin:0 0 20px 0}h1{font-size:70px}h2{font-size:55px}h3{font-size:36px}h4{font-size:32px}a{background-color:transparent;display:inline-block;text-decoration:none;color:inherit;-webkit-transition:all ease-in-out .1s;-o-transition:all ease-in-out .1s;transition:all ease-in-out .1s}a:hover{-webkit-transition:all ease-in-out .1s;-o-transition:all ease-in-out .1s;transition:all ease-in-out .1s}b{font-weight:700}.flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-ms-flex-wrap:wrap;flex-wrap:wrap}ul.reset{margin:0;padding:0;list-style-type:none}button{font-family:inherit;font-size:100%;line-height:1.15;margin:0;overflow:visible;text-transform:none}button[type=button],button[type=submit]{min-height:60px;font-weight:300}.lsocials{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.lsocials li a svg{width:14px;fill:#fff}.lsocials li a:hover{opacity:.8}.lheader-items-contact-social li{margin-right:35px}.lheader-items-contact-social li:last-child{margin-right:0}.lheader-items-contact-social li a{text-decoration:none;font-size:16px}.lheader-items-contact-social li a svg{width:16px;fill:#213da5}.lheader-items-contact-social li a:hover{fill:#000}.lnavigation-social{display:none}.lheader{padding:15px 0;background-color:#fff}.lheader-items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.lheader-items-logo{display:block;max-width:176px;min-height:58.61px}.lheader-items-contact{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.lheader-items-contact-icon{margin-right:12px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.lheader-items-contact-phone{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.lheader-items-contact a{color:#213da5;line-height:23px;font-size:16px}.lheader-items-button{width:248px;height:58px;background-color:#213da5;font-size:18px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border-radius:30px;border:2px solid #213da5;color:#fff;-webkit-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease}.lheader-items-button:hover{background-color:transparent;color:#213da5;-webkit-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease}.lmain{background-color:#213da5}.lmain .container,.lmain .row{height:100%}.lmain-content{background-image:url(assets/images/bg-head.png);background-position:center center}.lmain-content-wrap{min-height:583px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.lmain-title{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.lmain-title h1{font-weight:900;font-size:65px;line-height:70px;color:#fff;margin:0;padding:0}.lmain-title-list{margin:39px 0;padding:0}.lmain-title-list li{color:#fff;list-style:none;color:#fff;font-size:20px;font-weight:300}.lmain-title p{font-size:20px;color:#fff;margin:38px 0 40px}.lmain-title-btn{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:357px;min-height:60px;padding:5px 0;background-color:#fdc153;-webkit-box-shadow:0 0 12px 0 rgba(252,193,83,.5);box-shadow:0 0 12px 0 rgba(252,193,83,.5);color:#213da5;border-radius:30px;font-size:18px;text-align:center}.lmain-title-btn:hover{background-color:#fdcf7a}.lmain-advantages{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.lmain-advantages-block{position:relative}.lmain-advantages-block .dash-circle{position:absolute;top:11%;left:50px;z-index:1;height:396px}.lmain-advantages-block .lmain-advantages-item{position:relative;z-index:2;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:40px 0}.lmain-advantages-block .lmain-advantages-item img{width:140px;height:140px}.lmain-advantages-block .lmain-advantages-item-text{padding-left:34px;max-width:200px}.lmain-advantages-block .lmain-advantages-item-text span{display:block;font-size:50px;color:#fff;font-weight:300}.lmain-advantages-block .lmain-advantages-item-text p{text-transform:uppercase;font-size:20px;font-weight:300;line-height:25px;color:#fff;margin-top:25px}.lmain-advantages-block .semi-circle-cstm{margin:0;margin-left:190px}.lnavigation{background-color:#0e91f6}.lnavigation-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.lnavigation-wrap-main{width:100%}.lnavigation-wrap .menu-burger{display:none}.lnavigation-list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.lnavigation-item{list-style:none;margin:0 51px;position:relative}.lnavigation-item:hover .lnavigation-item-link:before{opacity:1;-webkit-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease}.lnavigation-item-link{color:#fff;font-size:18px;padding:22px 0 20px;position:relative}.lnavigation-item-link:before{content:"";position:absolute;left:0;bottom:0;width:100%;height:2.5px;background-color:#fff;opacity:0}.lnavigation-item-link.active:before{opacity:1;-webkit-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease}.lnavigation-button{display:none}.lnavigation-search{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0;margin-left:10px;cursor:pointer}.lnavigation-search .icon-search{display:-webkit-box;display:-ms-flexbox;display:flex;height:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.lnavigation-search .icon-search svg{width:17px;height:17px}.lfixed__menu,.lfooter,.popup,section:not(.lmain){display:none}@media (min-width:576px){.col-sm{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-sm-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-sm-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-sm-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-sm-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-sm-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-sm-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-sm-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-sm-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-sm-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-sm-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-sm-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-sm-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-sm-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.flex-sm-row{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.flex-sm-wrap{-ms-flex-wrap:wrap;flex-wrap:wrap}.flex-sm-nowrap{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.flex-sm-fill{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}.justify-content-sm-end{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.justify-content-sm-center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.align-items-sm-end{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.align-items-sm-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.align-content-sm-end{-ms-flex-line-pack:end;align-content:flex-end}.align-content-sm-center{-ms-flex-line-pack:center;align-content:center}}@media (min-width:768px){.col-md{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-md-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-md-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-md-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-md-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-md-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-md-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-md-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-md-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-md-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-md-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-md-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-md-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.flex-md-row{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.flex-md-wrap{-ms-flex-wrap:wrap;flex-wrap:wrap}.flex-md-nowrap{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.flex-md-fill{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}.justify-content-md-end{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.justify-content-md-center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.align-items-md-end{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.align-items-md-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.align-content-md-end{-ms-flex-line-pack:end;align-content:flex-end}.align-content-md-center{-ms-flex-line-pack:center;align-content:center}}@media (min-width:992px){.lmain-content-wrap{padding:20px 0}.col-lg{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-lg-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-lg-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-lg-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-lg-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-lg-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-lg-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-lg-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-lg-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-lg-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-lg-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-lg-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-lg-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-lg-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.flex-lg-row{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.flex-lg-wrap{-ms-flex-wrap:wrap;flex-wrap:wrap}.flex-lg-nowrap{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.flex-lg-fill{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}.justify-content-lg-end{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.justify-content-lg-center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.align-items-lg-end{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.align-items-lg-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.align-content-lg-end{-ms-flex-line-pack:end;align-content:flex-end}.align-content-lg-center{-ms-flex-line-pack:center;align-content:center}}@media (min-width:1170px){.col-xl{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-xl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-xl-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-xl-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-xl-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-xl-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-xl-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-xl-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-xl-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-xl-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-xl-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-xl-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-xl-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-xl-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}@media (min-width:1200px){.flex-xl-row{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.flex-xl-wrap{-ms-flex-wrap:wrap;flex-wrap:wrap}.flex-xl-nowrap{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.flex-xl-fill{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}.justify-content-xl-end{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.justify-content-xl-center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.align-items-xl-end{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.align-items-xl-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.align-content-xl-end{-ms-flex-line-pack:end;align-content:flex-end}.align-content-xl-center{-ms-flex-line-pack:center;align-content:center}}@media (min-width:1440px){.container{max-width:1410px}}@media only screen and (max-width:1439.98px){.lmain-content-item .lmain-content-wrap{-ms-flex-pack:distribute;justify-content:space-around;-ms-flex-wrap:wrap;flex-wrap:wrap}.lnavigation-wrap{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.lnavigation-wrap-main{width:100%;-webkit-box-flex:1;-ms-flex:auto;flex:auto}.lnavigation-list{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.lnavigation-group{padding:0 30px}.lnavigation-item{margin:0}.lnavigation-search{padding:0 15px 0 35px}}@media only screen and (max-width:1169.98px){.lheader-items-social{display:none}.lmain-content-item .lmain-content-wrap .lmain-title{max-width:464px}.lmain-content-item .lmain-content-wrap .lmain-advantages-block .dash-circle{height:80%;top:10%;left:22%;border-left:1px dashed #fff}.lmain-content-item .lmain-content-wrap .lmain-advantages-block .dash-circle svg{display:none}.lmain-content-item .lmain-content-wrap .lmain-advantages-block .semi-circle-cstm{margin:0}}@media only screen and (max-width:991.98px){.lnavigation-group{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease;padding:30px 10px 0 25px}.lnavigation-list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.lnavigation-item{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.lnavigation-item:hover .lnavigation-item-link:before{display:none}.lnavigation-item-link{text-align:left;padding:10px 0 10px;font-size:23px}.lnavigation-item-link:before{display:none}.lnavigation-item-link.active{color:#213da5}.lnavigation-item-link.active:before{display:none}.lnavigation-button{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:180px;height:40px;border-radius:58px;background-color:#213da5;color:#fff;font-size:14px}.lnavigation-search{display:none}h1{font-size:60px}.lnavigation-social{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.lnavigation-social li{list-style:none;padding:15px 0}.lnavigation-social li a svg{width:18px}.lheader-items-button{display:none}.lmain-content-item .lmain-content-wrap{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.lmain-content-item .lmain-content-wrap .lmain-title{max-width:80%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:50px 0}.lmain-content-item .lmain-content-wrap .lmain-title h1,.lmain-content-item .lmain-content-wrap .lmain-title p{text-align:center}.lmain-content-item .lmain-content-wrap .lmain-title-list li{text-align:center}.lmain-content-item .lmain-content-wrap .lmain-advantages{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-bottom:60px}.lmain-content-item .lmain-content-wrap .lmain-image{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:30px}.lnavigation-wrap{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:15px 15px}.lnavigation-wrap-main{max-height:0;overflow:hidden;-webkit-transition:.5s ease;-o-transition:.5s ease;transition:.5s ease;width:100%;-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.lnavigation-wrap-main_fixed{display:block;position:absolute;top:100%;left:0}.lnavigation-wrap .menu-burger{width:40px;height:40px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.lnavigation-wrap .menu-burger.active span{-webkit-transform:rotate(405deg);-ms-transform:rotate(405deg);transform:rotate(405deg)}.lnavigation-wrap .menu-burger.active span:before{display:none}.lnavigation-wrap .menu-burger.active span:after{-webkit-transform:rotate(-271deg);-ms-transform:rotate(-271deg);transform:rotate(-271deg);top:0;-webkit-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease}.lnavigation-wrap .menu-burger span{display:block;width:100%;height:2.4px;background-color:#fff;position:relative;-webkit-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease}.lnavigation-wrap .menu-burger span:before{content:"";position:absolute;width:100%;height:100%;background-color:#fff;top:-14px;left:0}.lnavigation-wrap .menu-burger span:after{content:"";position:absolute;width:100%;height:100%;background-color:#fff;top:14px;left:0}}@media only screen and (max-width:767.98px){h1,h2,h3,h4,h5,h6{line-height:1.4}h1{font-size:50px}h2{font-size:40px}h3{font-size:26px}.lheader-items-contact-social li{margin:0 15px 5px 0}.lheader-items-contact-social li:last-child{margin:0 15px 5px 0}.lheader-items-contact-geo{display:none}}@media only screen and (max-width:576.98px){h1{font-size:40px}h3{font-size:24px}.lmain-content-item .lmain-content-wrap .lmain-title{max-width:100%}.lmain-content-item .lmain-content-wrap .lmain-title h1{font-size:40px;line-height:50px}.lmain-content-item .lmain-content-wrap .lmain-title-list li{font-size:16px}.lmain-content-item .lmain-content-wrap .lmain-title p{font-size:18px;margin:30px 0 35px}.lmain-content-item .lmain-content-wrap .lmain-title-btn{width:98%;font-size:16px}.lmain-content-item .lmain-content-wrap .lmain-advantages-block .dash-circle{left:21%}.lmain-content-item .lmain-content-wrap .lmain-advantages-block .lmain-advantages-item img{width:120px;height:120px}.lmain-content-item .lmain-content-wrap .lmain-advantages-block .lmain-advantages-item-text span{font-size:40px}.lmain-content-item .lmain-content-wrap .lmain-advantages-block .lmain-advantages-item-text p{font-size:18px;line-height:23px}}@media only screen and (max-width:400px){.lheader-items-logo{max-width:146px}.lheader-items-contact a{font-size:14px}}@media only screen and (max-width:350px){.lheader-items-contact-icon{display:none}.lmain-content-item .lmain-content-wrap .lmain-title-btn{font-size:14px}}</style>
-    <meta name="yandex-verification" content="4865e95ef7c7a733">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="yandex-verification" content="39ed11efe025e7fb">
-    <meta name="yandex-verification" content="754006cd48dab23a">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Продвижение — 🚩 Продвижение сайтов СПб, Москва и Регионы</title>
-    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://www.arenaseo.ru/">
-    <meta name="description" content="Комплексное продвижение сайта в СПб, Москве и регионах, продвижение сайта по позициям/трафику, работа с репутацией и ⭐️ отзывами комплексная работа с сайтом.">
-    <meta itemprop="name" content="Продвижение — 🚩 Продвижение сайтов СПб, Москва и Регионы">
-    <meta itemprop="description" content="Комплексное продвижение сайта в СПб, Москве и регионах, продвижение сайта по позициям/трафику, работа с репутацией и ⭐️ отзывами комплексная работа с сайтом.">
-    <meta itemprop="image" content="./logosign.svg">
-    <meta property="og:url" content="https://www.arenaseo.ru">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Продвижение — 🚩 Продвижение сайтов СПб, Москва и Регионы">
-    <meta property="og:description" content="Комплексное продвижение сайта в СПб, Москве и регионах, продвижение сайта по позициям/трафику, работа с репутацией и ⭐️ отзывами комплексная работа с сайтом.">
-    <meta property="og:image" content="./logosign.svg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Продвижение — 🚩 Продвижение сайтов СПб, Москва и Регионы">
-    <meta name="twitter:description" content="Комплексное продвижение сайта в СПб, Москве и регионах, продвижение сайта по позициям/трафику, работа с репутацией и ⭐️ отзывами комплексная работа с сайтом.">
-    <meta name="twitter:image" content="./logosign.svg">
-    <meta name="keywords" content="продвижение, продвижение сайтов">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="yes" content="yes">
-    <link rel="shortcut icon" href="/logosign.svg" type="image/svg">
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/header+popups+footer.css">
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/gallery.css">
-    <script>var yaParams = {ip_adress: "<? echo $_SERVER['REMOTE_ADDR'];?>"};</script>
+    <title>title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
     <svg class="icons" width="0" height="0">
-      <symbol id="accept" viewBox="0 0 20 17">
-        <g>
-          <g>
-            <path d="M19.28.451a1.91 1.91 0 0 1 .256 2.741L8.256 16.364.72 10.252a1.91 1.91 0 0 1-.256-2.74 2.038 2.038 0 0 1 2.816-.25l4.464 3.62L16.464.7A2.038 2.038 0 0 1 19.28.451z">       </path>
-          </g>
-        </g>
+      <symbol id="okdoc" viewbox="0 0 47 55">
+        <path fill-rule="evenodd" d="M34.5 55A12.5 12.5 0 1147 42.5 12.5 12.5 0 0134.5 55zm0-23A10.5 10.5 0 1045 42.5 10.5 10.5 0 0034.5 32zm-.743 14.647c-.018.021-.024.047-.044.066a1.026 1.026 0 01-1.427 0c-.02-.02-.026-.046-.044-.066l-3.956-3.956a.993.993 0 011.4-1.4L33 44.6l6.309-6.309a.993.993 0 011.4 1.4zM41 28a1 1 0 01-1-1V5h-7.141A3.991 3.991 0 0129 8H13a3.991 3.991 0 01-3.859-3H2v43h17a1 1 0 010 2H2a2 2 0 01-2-2V5a2 2 0 012-2h7.141A3.991 3.991 0 0113 0h16a3.991 3.991 0 013.859 3H40a2 2 0 012 2v22a1 1 0 01-1 1zM29 2H13a2 2 0 000 4h16a2 2 0 000-4zm2 24H11a1 1 0 010-2h20a1 1 0 010 2zm0-10H11a1 1 0 010-2h20a1 1 0 010 2zm0 5H11a1 1 0 010-2h20a1 1 0 010 2zm-21 9a1 1 0 011-1h10a1 1 0 010 2H11a1 1 0 01-1-1z"></path>
       </symbol>
-      <symbol id="load" viewbox="0 0 100 100">
-        <path d="M73 50c0-12.7-10.3-23-23-23S27 37.3 27 50m3.9 0c0-10.5 8.5-19.1 19.1-19.1S69.1 39.5 69.1 50">
-          <animatetransform attributename="transform" attributetype="XML" type="rotate" dur="1s" from="0 50 50" to="360 50 50" repeatcount="indefinite"></animatetransform>
-        </path>
+      <symbol id="quotebubble" viewbox="0 0 47 55">
+        <path d="M23.5 49c-.722 0-1.433-.044-2.138-.108a26.645 26.645 0 01-12.356 5.947c-.006-.026-.027-.048-.038-.073A1.317 1.317 0 018.25 55a1.336 1.336 0 01-1.344-1.328 1.284 1.284 0 01.255-.736c-.009 0-.016-.01-.025-.014a16.441 16.441 0 001.926-7.7q0-.625-.048-1.239A23.476 23.476 0 1123.5 49zm0-45a21.483 21.483 0 00-12.6 38.893 18.314 18.314 0 01.165 2.326 18.338 18.338 0 01-1.53 7.29 24.243 24.243 0 0010.938-5.746A21.489 21.489 0 1023.5 4zm-1.288 17.91c0 .013 0 .028.008.041a4.044 4.044 0 00-1.58 2.042 5.489 5.489 0 11-7.455 7.88c-.027.081-.071.159-.093.241-.135-.3-.249-.609-.361-.921A5.442 5.442 0 0112 28.5c0-.178.036-.346.053-.52-.026-.325-.053-.648-.053-.98 0-5.431 3.405-9.919 7.875-10.813a1.117 1.117 0 011.576.916c.013-.005.029 0 .042-.009l1.258 3.468c-.007 0-.012.009-.018.013a1.115 1.115 0 01.072.355 1.126 1.126 0 01-.593.98zm-2.3-3.574c-3.393.973-5.912 4.52-5.912 8.758V28.5a3.5 3.5 0 103.983-3.451 6.077 6.077 0 012.806-4.486zm14.3 3.574c0 .013 0 .028.008.041a4.044 4.044 0 00-1.58 2.042 5.489 5.489 0 11-7.455 7.88c-.027.081-.071.159-.093.241-.135-.3-.249-.609-.361-.921A5.442 5.442 0 0124 28.5c0-.178.036-.346.052-.52-.025-.325-.052-.648-.052-.98 0-5.431 3.405-9.919 7.875-10.813a1.117 1.117 0 011.576.916c.013-.005.029 0 .042-.009l1.258 3.468c-.007 0-.012.009-.018.013a1.06 1.06 0 01-.521 1.335zm-2.3-3.574c-3.393.973-5.912 4.52-5.912 8.758V28.5a3.5 3.5 0 103.983-3.451 6.077 6.077 0 012.806-4.486z" fill-rule="evenodd"></path>
       </symbol>
-      <symbol id="left" viewbox="0 0 22 22">
-        <path transform="translate(22 22) rotate(180 0 0)" d="M15.244 11.767L8.39 18.672a1.12 1.12 0 11-1.59-1.579l6.064-6.11-6.11-6.064a1.12 1.12 0 011.58-1.59l6.904 6.854a1.117 1.117 0 01.006 1.584"></path>
+      <symbol id="tick" viewbox="0 0 469.184 469.185">
+        <path d="M462.5 96.193l-21.726-21.726c-8.951-8.95-23.562-8.95-32.59 0L180.368 302.361l-119.34-119.34c-8.95-8.951-23.562-8.951-32.589 0L6.712 204.747c-8.95 8.951-8.95 23.562 0 32.589L163.997 394.62c4.514 4.514 10.327 6.809 16.218 6.809s11.781-2.295 16.219-6.809L462.27 128.783c9.18-9.103 9.18-23.638.23-32.59z"></path>
       </symbol>
-      <symbol id="right" viewbox="0 0 22 22">
-        <path d="M15.244 11.767L8.39 18.672a1.12 1.12 0 11-1.59-1.579l6.064-6.11-6.11-6.064a1.12 1.12 0 011.58-1.59l6.904 6.854a1.117 1.117 0 01.006 1.584"></path>
+      <symbol id="rightlarge" viewbox="0 0 10 18">
+        <path d="M9.69 9.751l-7.971 7.971a1.019 1.019 0 01-1.441-1.441L7.559 9 .278 1.719A1.019 1.019 0 011.719.278L9.69 8.249a1.11 1.11 0 010 1.502z" fill-rule="evenodd"> </path>
       </symbol>
-      <symbol id="emptystar" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512">
-        <path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
+      <symbol id="quote" viewbox="0 0 20 16">
+        <path d="M19.13 8.776a3.042 3.042 0 00-2.282-1.142 4.708 4.708 0 011-2.448 5.159 5.159 0 012.126-1.665L17.973 0a14.2 14.2 0 00-2.063 1.009A9.549 9.549 0 0013.627 2.9a10.8 10.8 0 00-1.876 3.035 11.264 11.264 0 00-.782 4.439 6.058 6.058 0 001.313 4.08 4.519 4.519 0 003.627 1.534 4.265 4.265 0 003.033-1.142 3.96 3.96 0 001.219-3.035 4.357 4.357 0 00-1.031-3.035zm-11.1 0a3.042 3.042 0 00-2.282-1.142 4.708 4.708 0 011-2.448 5.16 5.16 0 012.127-1.664L6.873 0A14.2 14.2 0 004.81 1.009 9.548 9.548 0 002.527 2.9 10.8 10.8 0 00.651 5.937a11.264 11.264 0 00-.781 4.439 6.057 6.057 0 001.313 4.08 4.519 4.519 0 003.627 1.533 4.265 4.265 0 003.033-1.142 3.96 3.96 0 001.219-3.035A4.357 4.357 0 008.03 8.776z" fill-rule="evenodd"></path>
       </symbol>
-      <symbol id="solidstar" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512">
-        <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+      <symbol id="tele" viewbox="0 0 20 20">
+        <path d="M14.78 15.369a.727.727 0 01-1.205.565l-3.332-2.455-1.607 1.548a.837.837 0 01-.669.327l.233-3.392 6.174-5.579c.268-.238-.059-.372-.417-.134L6.33 11.054l-3.288-1.026c-.714-.228-.729-.714.149-1.056l12.853-4.954c.6-.223 1.116.134.922 1.041z" fill="#909090" fill-rule="evenodd"></path>
       </symbol>
-      <symbol id="wavy" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 323.057 355">
-        <path d="M247.605 314.317c-43.096 6.596-105.699-13.329-127.119-87.381-1.224-3.672-1.836-7.956-2.448-11.628 49.572-11.016 97.92-47.124 102.204-90.576 3.672-39.168-36.108-50.796-62.424-28.764-31.212 26.316-53.244 64.872-55.08 105.875-31.824 4.284-63.036-4.284-80.172-35.496-28.764-52.631 9.792-123.624 61.2-144.432 5.508-1.836 3.06-10.404-2.448-8.568C10.326 33.544-26.394 132.688 21.954 191.439c18.972 22.645 49.572 29.988 81.396 26.316 4.284 41.616 42.006 80.431 71.247 95.17 14.841 7.481 32.508 13.41 66.075 8.736 6.912-.962 11.216-12.24 6.933-7.344zM144.354 132.688c9.792-13.464 22.644-28.764 39.168-34.272 15.911-5.508 21.42 16.524 22.031 26.316.612 12.24-7.956 23.256-15.912 31.824-16.523 18.971-44.063 35.496-72.215 42.839 1.836-23.868 13.464-47.123 26.928-66.707z"></path>
-        <path d="M282.793 323.81c-8.812-14.696-18.988-29.288-31.16-41.257-5.035-4.829-11.335 2.515-6.823 7.66 9.023 10.289 15.736 22.676 22.135 34.538-7.138 3.566-14.8 7.447-22.254 10.488-5.878 2.098-15.954 3.144-19.315 9.44-1.68 3.15-.107 5.774 2.517 7.768 6.4 4.725 17.423-1.884 23.827-4.296 10.392-4.09 19.629-8.916 29.078-14.581 3.147-1.887 3.883-6.61 1.995-9.76z"></path>
+      <symbol id="twit" viewbox="0 0 20 20">
+        <path d="M10.294 8.784s.2-2.739 2.175-2.763c1.61-.02 1.916.686 1.916.686A3.662 3.662 0 0015.7 6a2.046 2.046 0 01-.539 1.234A1.365 1.365 0 0016 6.942a1.6 1.6 0 01-.879 1.017 9.089 9.089 0 01-1.352 4.841c-1.291 2.11-4.055 2.171-5.49 2.188a7.855 7.855 0 01-3.272-.922 6.935 6.935 0 003.152-.666A15.331 15.331 0 016 11.68a2.219 2.219 0 00.782-.08 11.26 11.26 0 01-1.776-2.367 2.933 2.933 0 00.819.041s-1.268-1.993-.669-3.285a8.159 8.159 0 005.138 2.795z" fill="#222" fill-rule="evenodd"></path>
       </symbol>
-      <symbol id="close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 25 25">
-        <g transform="translate(3.966 3.568)">
-          <path d="M0-.001l17.435 18.213M0 18.212L17.435 0" stroke-width="3.232" stroke-linecap="round"></path>
-          <title>Layer 1</title>
-        </g>
+      <symbol id="vk" viewbox="0 0 20 20">
+        <path d="M10.994 6.771v3.257a.521.521 0 00.426.351c.3 0 .978-1.8 1.279-2.406a1.931 1.931 0 01.738-.826.61.61 0 01.363-.155h2.878a.464.464 0 01.3.727 29.378 29.378 0 01-2.255 2.736 1.315 1.315 0 00-.238.55 1.2 1.2 0 00.313.627c.2.226 1.816 2 1.966 2.155a1.194 1.194 0 01.276.576.765.765 0 01-.8.614h-2.342a2.788 2.788 0 01-.952-.565c-.226-.2-1.153-1.152-1.278-1.277a2.457 2.457 0 00.024-.363.826.826 0 00-.7.8 4.083 4.083 0 01-.238 1.139 1.024 1.024 0 01-.737.275 5 5 0 01-2.917-.724 14.339 14.339 0 01-4.2-5.011c-.773-1.543-.947-1.783-.9-1.958s.05-.3.226-.3h2.606a.851.851 0 01.351.326c.075.1.647 1.056.822 1.356s1.041 1.705 1.508 1.705a.6.6 0 00.474-.7V7.5a1.94 1.94 0 00-.978-1 1.261 1.261 0 01.928-.5c.6-.025 2.1-.025 2.43.024a.779.779 0 01.627.747z" fill="#222" fill-rule="evenodd"></path>
       </symbol>
-      <symbol id="face" viewbox="0 0 470.513 470.513">
-        <path d="M271.521 154.17v-40.541c0-6.086.28-10.8.849-14.13.567-3.335 1.857-6.615 3.859-9.853 1.999-3.236 5.236-5.47 9.706-6.708 4.476-1.24 10.424-1.858 17.85-1.858h40.539V0h-64.809c-37.5 0-64.433 8.897-80.803 26.691-16.368 17.798-24.551 44.014-24.551 78.658v48.82h-48.542v81.086h48.539v235.256h97.362V235.256h64.805l8.566-81.086h-73.37z"></path>
+      <symbol id="youtube" viewbox="0 0 20 20">
+        <path d="M14 16H7a4 4 0 01-4-4V8a4 4 0 014-4h7a4 4 0 014 4v4a4 4 0 01-4 4zm2-8a2 2 0 00-2-2H7a2 2 0 00-2 2v4a2 2 0 002 2h7a2 2 0 002-2V8zM9 8l4 2-4 2V8z" fill="#222" fill-rule="evenodd"></path>
       </symbol>
-      <symbol id="twit" viewbox="0 0 449.956 449.956">
-        <path d="M449.956 85.657c-17.702 7.614-35.408 12.369-53.102 14.279 19.985-11.991 33.503-28.931 40.546-50.819-18.281 10.847-37.787 18.268-58.532 22.267-18.274-19.414-40.73-29.125-67.383-29.125-25.502 0-47.246 8.992-65.24 26.98-17.984 17.987-26.977 39.731-26.977 65.235 0 6.851.76 13.896 2.284 21.128-37.688-1.903-73.042-11.372-106.068-28.407C82.46 110.158 54.433 87.46 31.403 59.101c-8.375 14.272-12.564 29.787-12.564 46.536 0 15.798 3.711 30.456 11.138 43.97 7.422 13.512 17.417 24.455 29.98 32.831-14.849-.572-28.743-4.475-41.684-11.708v1.142c0 22.271 6.995 41.824 20.983 58.674 13.99 16.848 31.645 27.453 52.961 31.833a95.543 95.543 0 01-24.269 3.138c-5.33 0-11.136-.475-17.416-1.42 5.9 18.459 16.75 33.633 32.546 45.535 15.799 11.896 33.691 18.028 53.677 18.418-33.498 26.262-71.66 39.393-114.486 39.393-8.186 0-15.607-.373-22.27-1.139 42.827 27.596 90.03 41.394 141.612 41.394 32.738 0 63.478-5.181 92.21-15.557 28.746-10.369 53.297-24.267 73.665-41.686 20.362-17.415 37.925-37.448 52.674-60.097 14.75-22.651 25.738-46.298 32.977-70.946 7.23-24.653 10.848-49.344 10.848-74.092 0-5.33-.096-9.325-.287-11.991 18.087-13.127 33.504-29.023 46.258-47.672z"></path>
+      <symbol id="face" viewbox="0 0 20 20">
+        <path d="M12.988 5.981L13.3 4a15.921 15.921 0 00-2.4.019 2.25 2.25 0 00-1.427.784A2.462 2.462 0 009 6.4v2.595l-2-.014v2.006l2 .008v6h2.013v-6h2.374l.313-2.016h-2.688V6.47a.561.561 0 01.67-.486c.44-.004 1.306-.003 1.306-.003z" fill="#222" fill-rule="evenodd"></path>
       </symbol>
-      <symbol id="inst" viewbox="0 0 511 511.9">
-        <path d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0074.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"></path>
-        <path d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zm167.402-222c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"></path>
+      <symbol id="inst" viewbox="0 0 20 20">
+        <path d="M13 17H7a4 4 0 01-4-4V7a4 4 0 014-4h6a4 4 0 014 4v6a4 4 0 01-4 4zm2-10a2 2 0 00-2-2H7a2 2 0 00-2 2v6a2 2 0 002 2h6a2 2 0 002-2V7zm-5 6a3 3 0 113-3 3 3 0 01-3 3zm1-4H9v2h2V9z" fill="#222" fill-rule="evenodd"></path>
       </symbol>
-      <symbol id="vk" viewbox="0 0 548.358 548.358">
-        <path d="M545.451 400.298c-.664-1.431-1.283-2.618-1.858-3.569-9.514-17.135-27.695-38.167-54.532-63.102l-.567-.571-.284-.28-.287-.287h-.288c-12.18-11.611-19.893-19.418-23.123-23.415-5.91-7.614-7.234-15.321-4.004-23.13 2.282-5.9 10.854-18.36 25.696-37.397 7.807-10.089 13.99-18.175 18.556-24.267 32.931-43.78 47.208-71.756 42.828-83.939l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712-4.764-1.427-10.853-1.663-18.278-.712l-82.224.568c-1.332-.472-3.234-.428-5.712.144l-3.713.859-1.431.715-1.136.859c-.952.568-1.999 1.567-3.142 2.995-1.137 1.423-2.088 3.093-2.848 4.996-8.952 23.031-19.13 44.444-30.553 64.238-7.043 11.803-13.511 22.032-19.418 30.693-5.899 8.658-10.848 15.037-14.842 19.126-4 4.093-7.61 7.372-10.852 9.849-3.237 2.478-5.708 3.525-7.419 3.142-1.715-.383-3.33-.763-4.859-1.143-2.663-1.714-4.805-4.045-6.42-6.995-1.622-2.95-2.714-6.663-3.285-11.136-.568-4.476-.904-8.326-1-11.563-.089-3.233-.048-7.806.145-13.706.198-5.903.287-9.897.287-11.991 0-7.234.141-15.085.424-23.555.288-8.47.521-15.181.716-20.125.194-4.949.284-10.185.284-15.705s-.336-9.849-1-12.991a44.442 44.442 0 00-2.99-9.137c-1.335-2.95-3.289-5.232-5.853-6.852-2.569-1.618-5.763-2.902-9.564-3.856-10.089-2.283-22.936-3.518-38.547-3.71-35.401-.38-58.148 1.906-68.236 6.855-3.997 2.091-7.614 4.948-10.848 8.562-3.427 4.189-3.905 6.475-1.431 6.851 11.422 1.711 19.508 5.804 24.267 12.275l1.715 3.429c1.334 2.474 2.666 6.854 3.999 13.134 1.331 6.28 2.19 13.227 2.568 20.837.95 13.897.95 25.793 0 35.689-.953 9.9-1.853 17.607-2.712 23.127-.859 5.52-2.143 9.993-3.855 13.418-1.715 3.426-2.856 5.52-3.428 6.28-.571.76-1.047 1.239-1.425 1.427a21.387 21.387 0 01-7.71 1.431c-2.667 0-5.901-1.334-9.707-4-3.805-2.666-7.754-6.328-11.847-10.992-4.093-4.665-8.709-11.184-13.85-19.558-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267-4.952-10.185-9.329-20.037-13.134-29.554-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-.859c-.95-.76-2.475-1.567-4.567-2.427a30.301 30.301 0 00-6.567-1.854l-78.229.568c-7.994 0-13.418 1.811-16.274 5.428l-1.143 1.711c-.571.953-.859 2.475-.859 4.57 0 2.094.571 4.664 1.714 7.707 11.42 26.84 23.839 52.725 37.257 77.659 13.418 24.934 25.078 45.019 34.973 60.237 9.897 15.229 19.985 29.602 30.264 43.112 10.279 13.515 17.083 22.176 20.412 25.981 3.333 3.812 5.951 6.662 7.854 8.565l7.139 6.851c4.568 4.569 11.276 10.041 20.127 16.416 8.853 6.379 18.654 12.659 29.408 18.85 10.756 6.181 23.269 11.225 37.546 15.126 14.275 3.905 28.169 5.472 41.684 4.716h32.834c6.659-.575 11.704-2.669 15.133-6.283l1.136-1.431c.764-1.136 1.479-2.901 2.139-5.276.668-2.379 1-5 1-7.851-.195-8.183.428-15.558 1.852-22.124 1.423-6.564 3.045-11.513 4.859-14.846 1.813-3.33 3.859-6.14 6.136-8.418 2.282-2.283 3.908-3.666 4.862-4.142.948-.479 1.705-.804 2.276-.999 4.568-1.522 9.944-.048 16.136 4.429 6.187 4.473 11.99 9.996 17.418 16.56 5.425 6.57 11.943 13.941 19.555 22.124 7.617 8.186 14.277 14.271 19.985 18.274l5.708 3.426c3.812 2.286 8.761 4.38 14.853 6.283 6.081 1.902 11.409 2.378 15.984 1.427l73.087-1.14c7.229 0 12.854-1.197 16.844-3.572 3.998-2.379 6.373-5 7.139-7.851.764-2.854.805-6.092.145-9.712-.677-3.611-1.344-6.136-2.008-7.563z"></path>
+      <symbol id="mail" viewbox="0 0 20 20">
+        <path d="M12.753 10.434a2.386 2.386 0 00-2.429-2.407h-.049a2.375 2.375 0 00-2.311 2.613 2.319 2.319 0 002.305 2.537 2.47 2.47 0 002.487-2.439zm-2.47-3.752A3.649 3.649 0 0112.9 7.861a.555.555 0 01.531-.606h.069a.607.607 0 01.581.628v5.367a.334.334 0 00.558.308c.824-.886 1.81-4.552-.512-6.677a5.368 5.368 0 00-6.612-.543 5.363 5.363 0 00-1.672 6.268 4.963 4.963 0 006.193 2.694c.958-.4 1.4.95.406 1.393A6.49 6.49 0 014.8 13.749a6.581 6.581 0 0110.594-7.657c2.226 2.432 2.1 6.987-.075 8.758a1.509 1.509 0 01-2.436-1.15l-.01-.383a3.574 3.574 0 01-2.59 1.126 3.885 3.885 0 010-7.759" fill="#222" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="mates" viewbox="0 0 20 20">
+        <path d="M10.5 10.99a3.5 3.5 0 113.518-3.5 3.508 3.508 0 01-3.518 3.5zm.008-5.034a1.519 1.519 0 101.535 1.518 1.528 1.528 0 00-1.538-1.518zm-3.017 5.123a6.074 6.074 0 011.119.542 4.382 4.382 0 001.887.395 5.828 5.828 0 001.964-.357 6 6 0 011.116-.565c.221.008.583.373.521 1.318-.035.538-1.018.761-1.363.968a2.284 2.284 0 01-.726.246s.847.906 1.063 1.129a2.671 2.671 0 01.948 1.278 1.342 1.342 0 01-1 1 4.485 4.485 0 01-1.4-1.12c-.583-.557-1.115-1.069-1.115-1.069s-.547.486-1.116 1.048a4.607 4.607 0 01-1.368 1.141 1.439 1.439 0 01-1.061-1.16 6.312 6.312 0 011.24-1.482 8.057 8.057 0 01.8-.757 1.909 1.909 0 01-.638-.208c-.481-.267-1.511-.547-1.484-1.043.022-.513.157-1.304.613-1.304z" fill="#222" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="close" viewbox="0 0 16 16">
+        <path d="M9.411 8l6.3 6.3a1 1 0 010 1.414.992.992 0 01-1.408 0l-6.3-6.306-6.3 6.306A1 1 0 01.294 14.3l6.3-6.3L.301 1.7A1 1 0 011.71.286l6.3 6.3 6.3-6.3A1 1 0 0115.7 1.7z" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="left" viewbox="0 0 17 12">
+        <path d="M.052 6.24a.747.747 0 00.026.13c0 .01.014.02.019.03a.967.967 0 00.2.3l4.992 5a1.002 1.002 0 001.414-1.42L3.416 6.99H16a1.005 1.005 0 000-2.01H3.416l3.287-3.29a1.006 1.006 0 000-1.42.983.983 0 00-1.414 0L.297 5.26a1.01 1.01 0 00-.2.31c0 .01-.014.01-.019.02a1.147 1.147 0 00-.026.14.651.651 0 000 .51z" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="burger" viewbox="0 0 18 16">
+        <path d="M1 0h16a1 1 0 011 1 1 1 0 01-1 1H1a1 1 0 01-1-1 1 1 0 011-1zm0 7h16a1 1 0 011 1 1 1 0 01-1 1H1a1 1 0 01-1-1 1 1 0 011-1zm0 7h16a1 1 0 011 1 1 1 0 01-1 1H1a1 1 0 01-1-1 1 1 0 011-1z" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="tridown" viewbox="0 0 5 2.844">
+        <path d="M5 .332l-2.5 2.5L0 .332V0h5v.332z" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="emailmob" viewbox="0 0 16 13">
+        <path d="M14 13H2a2 2 0 01-2-2V2a2 2 0 012-2h12a2 2 0 012 2v9a2 2 0 01-2 2zM3.534 2l4.481 4.482L12.5 2H3.534zM14 3.5L8.827 8.671a1.047 1.047 0 01-.812.3 1.047 1.047 0 01-.811-.3L2 3.467V11h12V3.5z" fill="#222" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="logo" viewbox="0 0 192 48">
+        <path class="text1" d="M151.066 31.763a7.611 7.611 0 01-5.582 2.219 3.492 3.492 0 01-1.789-.49 4.444 4.444 0 01-1.707-1.4l.023 7.934h-4.991V17.012h4.08l.263 2.212A4.145 4.145 0 01143 17.6a5.508 5.508 0 012.6-.581 6.667 6.667 0 015.461 2.37 9.526 9.526 0 011.943 6.235v.317a8.491 8.491 0 01-1.938 5.822zm-3.1-6.144a5.149 5.149 0 00-.768-3.2 3.05 3.05 0 00-2.764-1.434 2.314 2.314 0 00-1.434.405 2.518 2.518 0 00-1.016 1.162v6.119A2.319 2.319 0 00143 29.728a2.6 2.6 0 001.461.362 2.979 2.979 0 002.668-1.253 4.313 4.313 0 00.829-2.9v-.318zm-15.4-4.61a3.151 3.151 0 00-1.68.452 2.253 2.253 0 00-.863 1.107v11.44h-5.046v-17h4.736l.2 2.415a2.269 2.269 0 011.161-1.724 4.977 4.977 0 012.644-.719 3.5 3.5 0 01.628.053c.191.035.447.078.643.129l-.011 3.827zM115.012 34a7.577 7.577 0 01-5.888-2.323A8.567 8.567 0 01107 25.663v-.318a8.6 8.6 0 012.117-6 7.508 7.508 0 015.864-2.339 7.591 7.591 0 015.9 2.331 8.555 8.555 0 012.133 6.009v.318a8.572 8.572 0 01-2.125 6.017A7.559 7.559 0 01115.012 34zm3.418-8.658a4.931 4.931 0 00-.831-3.021 2.836 2.836 0 00-2.619-1.378 2.8 2.8 0 00-2.595 1.385 4.971 4.971 0 00-.823 3.013v.318a4.84 4.84 0 00.815 3 2.841 2.841 0 002.635 1.355 2.811 2.811 0 002.595-1.362 4.808 4.808 0 00.823-3v-.307zm-18.447-5.334a3.948 3.948 0 00-1.231-3.03A3.508 3.508 0 0095.944 16a3.747 3.747 0 00-2.907 1.368A6.87 6.87 0 0092 21.114v3.8a5.707 5.707 0 001.1 3.544 3.414 3.414 0 002.918 1.537 3.319 3.319 0 002.855-1.078 3.979 3.979 0 001.087-2.854l4.952-.023.033.09a7.364 7.364 0 01-2.324 5.87 8.639 8.639 0 01-6.1 1.989 9.441 9.441 0 01-6.877-2.54A8.7 8.7 0 0187 24.89v-3.758a8.846 8.846 0 012.576-6.564 9.032 9.032 0 016.7-2.555 9.213 9.213 0 016.317 1.96 7.323 7.323 0 012.4 5.935l-.033.09zm-21-10.025h4.989v24.025h-4.989V9.982zm-8.012 0h5.04v24.025h-5.04V9.982zm-8.6 20.028h-7.778l-1.4 4h-5.2L55.956 12h5.1l7.933 22.008h-5.2zm-3.824-11.965h-.1l-2.761 8.006h5.607z" fill-rule="evenodd"></path>
+        <path class="text2" d="M189.954 31.827a7.9 7.9 0 01-10.906 0 8.4 8.4 0 01-2.058-6.008V20.2a8.458 8.458 0 012.05-6.008 7.856 7.856 0 0110.9 0A8.42 8.42 0 01192 20.2v5.615a8.428 8.428 0 01-2.046 6.012zm-2.386-11.444a5.553 5.553 0 00-.815-3.243 2.8 2.8 0 00-4.527 0 5.625 5.625 0 00-.8 3.243v5.227a5.646 5.646 0 00.807 3.281 2.636 2.636 0 002.287 1.143 2.586 2.586 0 002.248-1.143 5.679 5.679 0 00.8-3.28v-5.227zM174.5 34a2.5 2.5 0 112.5-2.5 2.5 2.5 0 01-2.5 2.5zm-7.477-7.821l-3.206 3.8.183.064h7l.011 3.957h-13.992v-2.887l6.606-7.337a14.123 14.123 0 001.975-3.05 4.489 4.489 0 00.41-2.293 1.96 1.96 0 00-.511-1.682 2.81 2.81 0 00-4.168.227 2.636 2.636 0 00-.806 2.042h-4.4l-.031-.091a6.231 6.231 0 011.984-4.863 9.033 9.033 0 0111.034-.3 5.959 5.959 0 011.922 4.654 6.435 6.435 0 01-1.077 3.617 22.918 22.918 0 01-2.934 4.142z" fill-rule="evenodd"></path>
+        <path class="emblem" d="M29.715 24.493l-8.7-8.16-.092-.025-1.892-1.775a11 11 0 01-.213-12.471L21.01 0l17.4 16.321a11.04 11.04 0 010 16.321l-6.785 6.363-8.662-8.123zm-17.429-.5l8.7 8.082.093.025 1.892 1.757a10.8 10.8 0 01.213 12.351l-2.194 2.038L3.586 32.082a10.863 10.863 0 010-16.164l6.785-6.3 8.663 8.045z" fill-rule="evenodd"></path>
+        <path d="M29.655 24.437l-1.775-1.664 10.368-6.6.014.013zm-17.335-.413l1.758 1.633L3.608 32.1l-.021-.02z" opacity=".07" fill-rule="evenodd"></path>
+        <path d="M31.629 39.009l-8.662-8.123 6.6-6.25 8.711 8.141zM10.371 9.616l8.663 8.045-6.586 6.179-8.679-8.092z" fill="#fff" opacity=".12" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="mailfly" viewbox="0 0 70 30">
+        <path d="M32 0h33a4 4 0 014 4v22a4 4 0 01-4 4H32a4 4 0 01-4-4V4a4 4 0 014-4zm0 2h33a2 2 0 012 2v22a2 2 0 01-2 2H32a2 2 0 01-2-2V4a2 2 0 012-2zm13.672 16.834L32.134 5.3A1.992 1.992 0 0133.7 4.031l13.386 13.388a2 2 0 002.828 0L63.3 4.031A1.992 1.992 0 0164.866 5.3L51.328 18.834a4 4 0 01-5.656 0zM7 8h14a1 1 0 011 1 1 1 0 01-1 1H7a1 1 0 01-1-1 1 1 0 011-1zm-6 6h14a1 1 0 011 1 1 1 0 01-1 1H1a1 1 0 01-1-1 1 1 0 011-1zm6 6h14a1 1 0 011 1 1 1 0 01-1 1H7a1 1 0 01-1-1 1 1 0 011-1z" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="phone" viewbox="0 0 14 14">
+        <path d="M14 11.052a.5.5 0 00-.03-.209 1.758 1.758 0 00-.756-.527c-.564-.316-1.141-.626-1.699-.953a2.047 2.047 0 00-.886-.457c-.607 0-1.493 1.8-2.031 1.8a2.138 2.138 0 01-.856-.388 9.894 9.894 0 01-4.07-4.065 2.134 2.134 0 01-.389-.853c0-.536 1.8-1.421 1.8-2.027a2.045 2.045 0 00-.458-.885C4.3 1.932 3.99 1.355 3.672.789a1.755 1.755 0 00-.528-.755A.5.5 0 002.935 0a4.427 4.427 0 00-1.384.312A2.62 2.62 0 00.5 1.524a3.789 3.789 0 00-.511 1.848 7.644 7.644 0 00.687 2.6A9.291 9.291 0 001.5 7.714a16.783 16.783 0 004.778 4.769 9.283 9.283 0 001.742.825 7.673 7.673 0 002.608.686 3.805 3.805 0 001.851-.507 2.62 2.62 0 001.214-1.052A4.418 4.418 0 0014 11.052z" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="phone2" viewbox="0 0 16 16">
+        <path d="M14 9a7 7 0 00-7-7V0a9 9 0 019 9h-2zm-2 0h-2a3 3 0 00-3-3V4a5 5 0 015 5zm2 4.053a.507.507 0 00-.03-.209 1.761 1.761 0 00-.756-.526c-.567-.318-1.145-.626-1.7-.954a2.049 2.049 0 00-.886-.457c-.607 0-1.493 1.8-2.031 1.8a2.139 2.139 0 01-.856-.388 9.9 9.9 0 01-4.069-4.065 2.134 2.134 0 01-.388-.854c0-.537 1.8-1.421 1.8-2.026a2.045 2.045 0 00-.458-.885c-.326-.557-.636-1.133-.954-1.7a1.753 1.753 0 00-.528-.755A.5.5 0 002.935 2a4.427 4.427 0 00-1.384.308A2.617 2.617 0 00.5 3.525a3.789 3.789 0 00-.511 1.848 7.646 7.646 0 00.687 2.6A9.291 9.291 0 001.5 9.714a16.788 16.788 0 004.78 4.769 9.3 9.3 0 001.742.825 7.672 7.672 0 002.608.685 3.8 3.8 0 001.851-.507 2.618 2.618 0 001.219-1.052 4.416 4.416 0 00.3-1.381z" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="phonemob" viewbox="0 0 21 21">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.956 15.97l.033.358c.034.36-.01.722-.129 1.063a6.757 6.757 0 01-1.035 1.929l-.102.132-.123.114a4.945 4.945 0 01-2.575 1.258 6.331 6.331 0 01-3.005-.01l-.087-.022-.085-.029a10.569 10.569 0 01-3.135-1.725 12.216 12.216 0 01-1.873-1.56l-.025-.025-.024-.026a20.05 20.05 0 01-4.17-7.022l-.012-.036-.011-.037a11.884 11.884 0 01-.457-2.368 10.07 10.07 0 01.032-3.538l.018-.096.027-.094A6.086 6.086 0 013.74 1.65 4.918 4.918 0 016.16.107l.15-.042.156-.018a7.046 7.046 0 012.19.09c.345.067.672.204.962.403l.284.196.203.28c.372.514.612 1.111.7 1.739l.145.567c.1.395.195.766.3 1.142.253.571.376 1.193.356 1.82l-.008.237-.063.23a2.51 2.51 0 01-.7 1.146c-.23.218-.47.377-.655.486-.283.167-.6.313-.855.425a8.639 8.639 0 002.22 3.682c.235-.165.55-.38.867-.549.19-.1.45-.223.752-.305.293-.08.766-.16 1.307-.02l.217.058.2.103a4.246 4.246 0 011.415 1.188c.278.271.553.529.845.802l.464.436c.506.378.914.872 1.188 1.443l.156.324zm-2.619-.22a1.9 1.9 0 01.66.762.536.536 0 01-.027.227 4.76 4.76 0 01-.73 1.362 2.945 2.945 0 01-1.607.76 4.332 4.332 0 01-2.132.012A8.568 8.568 0 019.9 17.426a10.21 10.21 0 01-1.632-1.35 18.049 18.049 0 01-3.754-6.32 9.884 9.884 0 01-.386-2.048 8.071 8.071 0 01.012-2.913 4.087 4.087 0 011.076-1.79 2.91 2.91 0 011.482-.971 5.046 5.046 0 011.573.064.57.57 0 01.215.09c.2.275.32.599.35.937l.167.654c.119.465.237.93.369 1.39.166.325.247.687.236 1.052-.09.326-.714.596-1.32.857-.569.246-1.121.485-1.196.756-.02.342.039.683.17.999a10.639 10.639 0 003.203 5.385c.217.272.493.492.806.645.28.074.769-.272 1.273-.629.535-.379 1.088-.77 1.423-.682.329.17.61.42.819.725.333.33.678.652 1.023.975l.53.498z"></path>
+      </symbol>
+      <symbol id="place" viewbox="0 0 13 16">
+        <path d="M11.9 9.916h.03L7 16H6L1.067 9.916h.03a6.262 6.262 0 01-1.1-3.541 6.5 6.5 0 0113 0A6.262 6.262 0 0111.9 9.916zM6.5 2a4.5 4.5 0 00-3.741 7h-.012l3.542 4.447h.422L10.289 9h-.049A4.5 4.5 0 006.5 2zm0 6A1.5 1.5 0 118 6.5 1.5 1.5 0 016.5 8z" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="top" viewbox="0 0 12 16">
+        <path fill="#1d1a1a" fill-rule="evenodd" d="M11.717 6.682a1.008 1.008 0 01-1.425 0L7 3.39v11.606a1 1 0 01-2 0V3.39L1.708 6.682A1.008 1.008 0 01.283 5.256L5.26.279a.92.92 0 01.251-.131.987.987 0 01.2-.1.919.919 0 01.172-.033.989.989 0 01.861.266l4.977 4.977a1.008 1.008 0 01-.004 1.424z"></path>
+      </symbol>
+      <symbol id="angledown" viewbox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+      </symbol>
+      <symbol id="angleright" viewbox="0 0 256 512">
+        <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+      </symbol>
+      <symbol id="email" viewbox="0 0 18 14">
+        <path d="M16 14H2a2 2 0 01-2-2V2a2 2 0 011.95-2 1.025 1.025 0 01.22 0h13.69a1 1 0 01.25.011A2 2 0 0118 2v10a2 2 0 01-2 2zM4.53 2l4.49 4.482L13.5 2H4.53zM16 2.5L9.83 8.673a1.26 1.26 0 01-1.63 0L2 2.473V12h14V2.5z" fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="arright" viewBox="0 0 9 16">
+        <line x1="1" x2="8" y1="1" y2="8" stroke-linecap="round"></line>
+        <line x1="8" x2="1" y1="8" y2="15" stroke-linecap="round"></line>
       </symbol>
     </svg>
-    <div itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ARENA - комплексная работа с сайтом">
-      <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-        <meta itemprop="addressLocality" content="Санкт-Петербург">
-        <meta itemprop="postalCode" content="">
-        <meta itemprop="streetAddress" content="">
-      </div>
-      <meta itemprop="email" content="mail@arenaseo.ru">
-      <meta itemprop="telephone" content="+7 (812) 629-31-22">
-    </div>
-    <section class="lmain">
-      <header class="lheader">
-        <div class="container lheader-items"><a class="lheader-items-logo" href="/"><img class="mainlogo" src="assets/images/logo.svg" alt="logo"></a>
-          <div class="lheader-items-contact lheader-items-contact-geo">
-            <div class="lheader-items-contact-icon"><img src="assets/images/icon/location.png" alt="img"></div><a href="#">Санкт-Петербург, <br>						Парашютная улица, 42к2 помещение 7б</a>
-          </div>
-          <div class="lheader-items-contact">
-            <div class="lheader-items-contact-icon"><img src="assets/images/icon/phone.png" alt="img"></div>
-            <div class="lheader-items-contact-phone"><a href="tel:+79500222294">+7 (950) 022-22-94</a><a href="tel:+78126293122">+7 (812) 629-31-22</a></div>
-          </div>
-          <div class="lheader-items-social">
-            <ul class="reset flex lheader-items-contact-social lsocial">
-              <li><a href="#">
-                  <svg viewBox="0 0 548.358 548.358"> 
-                    <use href="#vk"></use>
-                  </svg></a></li>
-              <li><a href="#">
-                  <svg viewBox="0 0 470.513 470.513"> 
-                    <use href="#face"></use>
-                  </svg></a></li>
-              <li><a href="#">
-                  <svg viewBox="0 0 449.956 449.956"> 
-                    <use href="#twit"></use>
-                  </svg></a></li>
-              <li><a href="#">
-                  <svg viewBox="0 0 511 511.9"> 
-                    <use href="#inst"></use>
-                  </svg></a></li>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 192 48">
+            <path class="text1" d="M151.066 31.763a7.611 7.611 0 01-5.582 2.219 3.492 3.492 0 01-1.789-.49 4.444 4.444 0 01-1.707-1.4l.023 7.934h-4.991V17.012h4.08l.263 2.212A4.145 4.145 0 01143 17.6a5.508 5.508 0 012.6-.581 6.667 6.667 0 015.461 2.37 9.526 9.526 0 011.943 6.235v.317a8.491 8.491 0 01-1.938 5.822zm-3.1-6.144a5.149 5.149 0 00-.768-3.2 3.05 3.05 0 00-2.764-1.434 2.314 2.314 0 00-1.434.405 2.518 2.518 0 00-1.016 1.162v6.119A2.319 2.319 0 00143 29.728a2.6 2.6 0 001.461.362 2.979 2.979 0 002.668-1.253 4.313 4.313 0 00.829-2.9v-.318zm-15.4-4.61a3.151 3.151 0 00-1.68.452 2.253 2.253 0 00-.863 1.107v11.44h-5.046v-17h4.736l.2 2.415a2.269 2.269 0 011.161-1.724 4.977 4.977 0 012.644-.719 3.5 3.5 0 01.628.053c.191.035.447.078.643.129l-.011 3.827zM115.012 34a7.577 7.577 0 01-5.888-2.323A8.567 8.567 0 01107 25.663v-.318a8.6 8.6 0 012.117-6 7.508 7.508 0 015.864-2.339 7.591 7.591 0 015.9 2.331 8.555 8.555 0 012.133 6.009v.318a8.572 8.572 0 01-2.125 6.017A7.559 7.559 0 01115.012 34zm3.418-8.658a4.931 4.931 0 00-.831-3.021 2.836 2.836 0 00-2.619-1.378 2.8 2.8 0 00-2.595 1.385 4.971 4.971 0 00-.823 3.013v.318a4.84 4.84 0 00.815 3 2.841 2.841 0 002.635 1.355 2.811 2.811 0 002.595-1.362 4.808 4.808 0 00.823-3v-.307zm-18.447-5.334a3.948 3.948 0 00-1.231-3.03A3.508 3.508 0 0095.944 16a3.747 3.747 0 00-2.907 1.368A6.87 6.87 0 0092 21.114v3.8a5.707 5.707 0 001.1 3.544 3.414 3.414 0 002.918 1.537 3.319 3.319 0 002.855-1.078 3.979 3.979 0 001.087-2.854l4.952-.023.033.09a7.364 7.364 0 01-2.324 5.87 8.639 8.639 0 01-6.1 1.989 9.441 9.441 0 01-6.877-2.54A8.7 8.7 0 0187 24.89v-3.758a8.846 8.846 0 012.576-6.564 9.032 9.032 0 016.7-2.555 9.213 9.213 0 016.317 1.96 7.323 7.323 0 012.4 5.935l-.033.09zm-21-10.025h4.989v24.025h-4.989V9.982zm-8.012 0h5.04v24.025h-5.04V9.982zm-8.6 20.028h-7.778l-1.4 4h-5.2L55.956 12h5.1l7.933 22.008h-5.2zm-3.824-11.965h-.1l-2.761 8.006h5.607z" fill-rule="evenodd"></path>
+            <path class="text2" d="M189.954 31.827a7.9 7.9 0 01-10.906 0 8.4 8.4 0 01-2.058-6.008V20.2a8.458 8.458 0 012.05-6.008 7.856 7.856 0 0110.9 0A8.42 8.42 0 01192 20.2v5.615a8.428 8.428 0 01-2.046 6.012zm-2.386-11.444a5.553 5.553 0 00-.815-3.243 2.8 2.8 0 00-4.527 0 5.625 5.625 0 00-.8 3.243v5.227a5.646 5.646 0 00.807 3.281 2.636 2.636 0 002.287 1.143 2.586 2.586 0 002.248-1.143 5.679 5.679 0 00.8-3.28v-5.227zM174.5 34a2.5 2.5 0 112.5-2.5 2.5 2.5 0 01-2.5 2.5zm-7.477-7.821l-3.206 3.8.183.064h7l.011 3.957h-13.992v-2.887l6.606-7.337a14.123 14.123 0 001.975-3.05 4.489 4.489 0 00.41-2.293 1.96 1.96 0 00-.511-1.682 2.81 2.81 0 00-4.168.227 2.636 2.636 0 00-.806 2.042h-4.4l-.031-.091a6.231 6.231 0 011.984-4.863 9.033 9.033 0 0111.034-.3 5.959 5.959 0 011.922 4.654 6.435 6.435 0 01-1.077 3.617 22.918 22.918 0 01-2.934 4.142z" fill-rule="evenodd"></path>
+            <path class="emblem" d="M29.715 24.493l-8.7-8.16-.092-.025-1.892-1.775a11 11 0 01-.213-12.471L21.01 0l17.4 16.321a11.04 11.04 0 010 16.321l-6.785 6.363-8.662-8.123zm-17.429-.5l8.7 8.082.093.025 1.892 1.757a10.8 10.8 0 01.213 12.351l-2.194 2.038L3.586 32.082a10.863 10.863 0 010-16.164l6.785-6.3 8.663 8.045z" fill-rule="evenodd"></path>
+            <path d="M29.655 24.437l-1.775-1.664 10.368-6.6.014.013zm-17.335-.413l1.758 1.633L3.608 32.1l-.021-.02z" opacity=".07" fill-rule="evenodd"></path>
+            <path d="M31.629 39.009l-8.662-8.123 6.6-6.25 8.711 8.141zM10.371 9.616l8.663 8.045-6.586 6.179-8.679-8.092z" fill="#fff" opacity=".12" fill-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="header__text">Готовое решение для создания корпоративного сайта	</div>
+        <address class="address header__address">
+          <svg viewBox="0 0 13 16"> 
+            <use href="#place"></use>
+          </svg><span>Челябинск, ул. Лермонтова 21, 3 этаж, офис 4</span>
+        </address>
+        <address class="phoneschedule header__phoneschedule">
+          <div class="phoneschedule__phone droplist droplist_desc selftrigger">
+            <svg class="phoneschedule__phoneicon" viewBox="0 0 14 14"> 
+              <use href="#phone"></use>
+            </svg>
+            <svg class="phoneschedule__phoneicon2" viewBox="0 0 21 21"> 
+              <use href="#phonemob"></use>
+            </svg><a href="tel:+70000000000" data-descr="Отдел продаж">+7 (000) 000-00-00</a>
+            <svg class="phoneschedule__downicon" viewBox="0 0 5 2.844"> 
+              <use href="#tridown"></use>
+            </svg>
+            <ul class="droplist__list">
+              <li class="droplist__item droplist__item_nolink for9 flex flex_between">Телефоны
+                <svg class="close" viewBox="0 0 16 16"> 
+                  <use href="#close"></use>
+                </svg>
+              </li>
+              <li class="droplist__item"><a class="phoneschedule__phone" href="tel:+70000000001">+7 (000) 000-00-01
+                  <div class="phoneschedule__small">Бухгалтерия</div></a></li>
+              <li class="droplist__item"><a class="phoneschedule__phone" href="tel:+70000000002">+7 (000) 000-00-02
+                  <div class="phoneschedule__small">Директор</div></a></li>
+              <li class="callorder droplist__item droplist__item_nolink for9 phoneschedule__mobcall">
+                <svg viewBox="0 0 16 16"> 
+                  <use href="#phone2"></use>
+                </svg><span>Заказать звонок</span>
+              </li>
             </ul>
-          </div><a class="lheader-items-button open__form popuplink" href="#service-order">Заказать услугу</a>
+          </div>
+          <div class="phoneschedule__small phoneschedule__schedule">Пн-Вс: 10.00 - 19.00</div>
+        </address>
+        <button class="header__btn btn btn_small btn_transp callorder">Заказать звонок</button>
+        <div class="burger selftrigger">
+          <svg viewBox="0 0 18 16"> 
+            <use href="#burger"></use>
+          </svg>
         </div>
-      </header>
-      <div class="lnavigation">
-        <div class="container lnavigation-wrap"><a class="lnavigation-button open__form popuplink" href="#service-order">Заказать услугу</a>
-          <nav class="lnavigation-wrap-main">
-            <div class="lnavigation-group">
-              <ul class="lnavigation-list reset">
-                <li class="lnavigation-item"><a class="lnavigation-item-link active" href="/">Главная</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/akcii.html">Акции</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/tarifi.html">Тарифы</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/prodvizenie.html">Услуги</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/audit.html">
-                    SEO
-                    аудит</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/portfolio.html">Портфолио</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/contacts.html">Контакты</a></li>
+        <nav class="header__menu">
+          <ul>
+            <li class="droplist droplist_topblue"><a href="./">Компания
+                <svg viewBox="0 0 320 512"> 
+                  <use href="#angledown"></use>
+                </svg></a>
+              <ul class="droplist__list">
+                <li class="droplist__item"><a href="./">О компании</a></li>
+                <li class="droplist__item"><a href="./">История</a></li>
+                <li class="droplist__item"><a href="./">Лицензии</a></li>
+                <li class="droplist__item"><a href="./">Партнеры</a></li>
+                <li class="droplist__item"><a href="./">Сотрудники</a></li>
+                <li class="droplist__item"><a href="./">Отзывы</a></li>
+                <li class="droplist__item"><a href="./">Вакансии</a></li>
+                <li class="droplist__item"><a href="./">Реквизиты</a></li>
               </ul>
-              <ul class="lnavigation-social lsocials">
-                <li><a href="#">
-                    <svg viewBox="0 0 548.358 548.358"> 
-                      <use href="#vk"></use>
-                    </svg></a></li>
-                <li><a href="#">
-                    <svg viewBox="0 0 449.956 449.956"> 
-                      <use href="#twit"></use>
-                    </svg></a></li>
-                <li><a href="#">
-                    <svg viewBox="0 0 470.513 470.513"> 
-                      <use href="#face"></use>
-                    </svg></a></li>
-                <li><a href="#">
-                    <svg viewBox="0 0 511 511.9"> 
-                      <use href="#inst"></use>
-                    </svg></a></li>
+            </li>
+            <li class="droplist droplist_catalog"><a href="./">Каталог
+                <svg viewBox="0 0 320 512"> 
+                  <use href="#angledown"></use>
+                </svg></a>
+              <div class="droplist__list">
+                <div class="catlist">
+                  <div class="catlist__img"><img src="img/navmenu/catalog/1.jpg" alt="alt"></div>
+                  <div class="catlist__text"><a class="catlist__title" href="./">Аренда спецтехники</a>
+                    <ul class="catlist__list">
+                      <li><a href="./">Автокраны</a></li>
+                      <li><a href="./">Манипуляторы</a></li>
+                      <li><a href="./">Самосвалы</a></li>
+                      <li><a href="./">Экскаваторы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catlist">
+                  <div class="catlist__img"><img src="img/navmenu/catalog/2.jpg" alt="alt"></div>
+                  <div class="catlist__text"><a class="catlist__title" href="./">Медицинское оборудование</a>
+                    <ul class="catlist__list">
+                      <li><a href="./">Косметология</a></li>
+                      <li><a href="./">Лаборатория</a></li>
+                      <li><a href="./">Медицинская мебель</a></li>
+                      <li><a href="./">Рентгеновские аппараты</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catlist">
+                  <div class="catlist__img"><img src="img/navmenu/catalog/3.jpg" alt="alt"></div>
+                  <div class="catlist__text"><a class="catlist__title" href="./">Металлопрокат</a>
+                    <ul class="catlist__list">
+                      <li><a href="./">Сортовой прокат из нержавеющей стали</a></li>
+                      <li><a href="./">Трубы нержавеющие</a></li>
+                      <li><a href="./">Сварочные материалы</a></li>
+                      <li><a href="./">Просечно-вытяжные листы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catlist">
+                  <div class="catlist__img"><img src="img/navmenu/catalog/4.jpg" alt="alt"></div>
+                  <div class="catlist__text"><a class="catlist__title" href="./">Программные продукты</a>
+                    <ul class="catlist__list">
+                      <li><a href="./">CRM системы</a></li>
+                      <li><a href="./">Хостинг</a></li>
+                      <li><a href="./">Операционные системы</a></li>
+                      <li><a href="./">Продукты 1С</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catlist">
+                  <div class="catlist__img"><img src="img/navmenu/catalog/5.jpg" alt="alt"></div>
+                  <div class="catlist__text"><a class="catlist__title" href="./">Системы безопасности</a>
+                    <ul class="catlist__list">
+                      <li><a href="./">Видеонаблюдение</a></li>
+                      <li><a href="./">Контроль доступа</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catlist">
+                  <div class="catlist__img"><img src="img/navmenu/catalog/6.jpg" alt="alt"></div>
+                  <div class="catlist__text"><a class="catlist__title" href="./">Системы вентиляции</a>
+                    <ul class="catlist__list">
+                      <li><a href="./">Воздуховоды</a></li>
+                      <li><a href="./">Комплектующие</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catlist">
+                  <div class="catlist__img"><img src="img/navmenu/catalog/7.jpg" alt="alt"></div>
+                  <div class="catlist__text"><a class="catlist__title" href="./">Стройматериалы</a>
+                    <ul class="catlist__list">
+                      <li><a href="./">Газоны</a></li>
+                      <li><a href="./">Изделия из ДПК</a></li>
+                      <li><a href="./">Печи, камины, дымоходы</a></li>
+                      <li><a href="./">Черепица</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catlist">
+                  <div class="catlist__img"><img src="img/navmenu/catalog/8.jpg" alt="alt"></div>
+                  <div class="catlist__text"><a class="catlist__title" href="./">Дизайнерская мебель</a>
+                    <ul class="catlist__list">
+                      <li><a href="./">Кровати</a></li>
+                      <li><a href="./">Мебель для гостиной</a></li>
+                      <li><a href="./">Мебель для спальни</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="droplist droplist_topblue"><a href="./">Услуги
+                <svg viewBox="0 0 320 512"> 
+                  <use href="#angledown"></use>
+                </svg></a>
+              <ul class="droplist__list">
+                <li class="droplist__item droplist"><a href="./">Автоматизация</a>
+                  <ul class="droplist__list droplist__list_right">
+                    <li class="droplist__item"><a href="./">Автоматизация отдела продаж</a></li>
+                    <li class="droplist__item"><a href="./">Комплексная автоматизация</a></li>
+                    <li class="droplist__item"><a href="./">POS-системы</a></li>
+                  </ul>
+                </li>
+                <li class="droplist__item droplist"><a href="./">Аренда спецтехники</a>
+                  <ul class="droplist__list droplist__list_right">
+                    <li class="droplist__item"><a href="./">Экскаваторы</a></li>
+                    <li class="droplist__item"><a href="./">Манипуляторы</a></li>
+                    <li class="droplist__item"><a href="./">Самосвалы</a></li>
+                    <li class="droplist__item"><a href="./">Автокраны</a></li>
+                  </ul>
+                </li>
+                <li class="droplist__item droplist"><a href="./">Инженерные системы</a>
+                  <ul class="droplist__list droplist__list_right">
+                    <li class="droplist__item"><a href="./">Системы электроосвещения</a></li>
+                    <li class="droplist__item"><a href="./">Видеонаблюдение</a></li>
+                    <li class="droplist__item"><a href="./">Охранные системы</a></li>
+                    <li class="droplist__item"><a href="./">Вентиляция</a></li>
+                  </ul>
+                </li>
+                <li class="droplist__item droplist"><a href="./">Металлоконструкции</a>
+                  <ul class="droplist__list droplist__list_right">
+                    <li class="droplist__item"><a href="./">Металлообработка</a></li>
+                    <li class="droplist__item"><a href="./">Сварочные работы</a></li>
+                    <li class="droplist__item"><a href="./">Монтаж металлоконструкций</a></li>
+                  </ul>
+                </li>
+                <li class="droplist__item droplist"><a href="./">Отделка фасада</a>
+                  <ul class="droplist__list droplist__list_right">
+                    <li class="droplist__item"><a href="./">Создание мокрого фасада</a></li>
+                    <li class="droplist__item"><a href="./">Облицовка блок-хаусом</a></li>
+                    <li class="droplist__item"><a href="./">Монтаж сайдинга</a></li>
+                  </ul>
+                </li>
+                <li class="droplist__item droplist"><a href="./">Проектирование</a>
+                  <ul class="droplist__list droplist__list_right">
+                    <li class="droplist__item"><a href="./">Электротехническое проектирование</a></li>
+                    <li class="droplist__item"><a href="./">Инженерные сети</a></li>
+                    <li class="droplist__item"><a href="./">Дизайн интерьеров</a></li>
+                  </ul>
+                </li>
               </ul>
+            </li>
+            <li class="droplist droplist_topblue"><a href="./">Проекты
+                <svg viewBox="0 0 320 512"> 
+                  <use href="#angledown"></use>
+                </svg></a>
+              <ul class="droplist__list">
+                <li class="droplist__item"><a href="./">Автоматизация</a></li>
+                <li class="droplist__item"><a href="./">Охранные системы</a></li>
+                <li class="droplist__item"><a href="./">Системы вентиляции</a></li>
+                <li class="droplist__item"><a href="./">Строительство</a></li>
+                <li class="droplist__item"><a href="./">Электроосвещение</a></li>
+              </ul>
+            </li>
+            <li class="droplist droplist_topblue"><a href="./">Курсы
+                <svg viewBox="0 0 320 512"> 
+                  <use href="#angledown"></use>
+                </svg></a>
+              <ul class="droplist__list">
+                <li class="droplist__item droplist"><a href="./">Английский язык для взрослых</a>
+                  <ul class="droplist__list droplist__list_left">
+                    <li class="droplist__item"> <a href="./">Английский для бизнеса</a></li>
+                    <li class="droplist__item"> <a href="./">Разговорный английский</a></li>
+                    <li class="droplist__item"> <a href="./">Экспресс-курс для туристов</a></li>
+                  </ul>
+                </li>
+                <li class="droplist__item droplist"><a href="./">Английский язык для детей</a>
+                  <ul class="droplist__list droplist__list_left">
+                    <li class="droplist__item"> <a href="./">Подготовка к ЕГЭ</a></li>
+                    <li class="droplist__item"> <a href="./">Для детей 7-12</a></li>
+                    <li class="droplist__item"> <a href="./">Для детей 12-17</a></li>
+                  </ul>
+                </li>
+                <li class="droplist__item droplist"><a href="./">Семинары, тренинги</a>
+                  <ul class="droplist__list droplist__list_left">
+                    <li class="droplist__item"><a href="./">Продажи и переговоры</a></li>
+                    <li class="droplist__item"><a href="./">Командообразование</a></li>
+                    <li class="droplist__item"><a href="./">Финансы и управление</a></li>
+                  </ul>
+                </li>
+                <li class="droplist__item droplist"><a href="./">Школа танцев</a>
+                  <ul class="droplist__list droplist__list_left">
+                    <li class="droplist__item"> <a href="./">Сальса</a></li>
+                    <li class="droplist__item"><a href="./">Свадебный танец</a></li>
+                    <li class="droplist__item"><a href="./">Бальные танцы</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="droplist droplist_topblue"><a href="./">Цены
+                <svg viewBox="0 0 320 512"> 
+                  <use href="#angledown"></use>
+                </svg></a>
+              <ul class="droplist__list">
+                <li class="droplist__item"><a href="./">ЖБИ, кирпич</a></li>
+                <li class="droplist__item"><a href="./">Гидроизоляция и утеплители</a></li>
+                <li class="droplist__item"><a href="./">Грунты, сетки</a></li>
+              </ul>
+            </li>
+            <li class="droplist droplist_topblue"><a href="./">Информация
+                <svg viewBox="0 0 320 512"> 
+                  <use href="#angledown"></use>
+                </svg></a>
+              <ul class="droplist__list">
+                <li class="droplist__item"><a href="./">Акции</a></li>
+                <li class="droplist__item"><a href="./">Новости</a></li>
+                <li class="droplist__item"><a href="./">Статьи</a></li>
+                <li class="droplist__item droplist"><a href="./">Возможности</a>
+                  <ul class="droplist__list droplist__list_left"> 
+                    <li class="droplist__item"><a href="./">Оформление</a></li>
+                    <li class="droplist__item"><a href="./">Кнопки</a></li>
+                    <li class="droplist__item"><a href="./">Иконки</a></li>
+                    <li class="droplist__item"><a href="./">Элементы</a></li>
+                  </ul>
+                </li>
+                <li class="droplist__item"><a href="./">Вопрос ответ</a></li>
+                <li class="droplist__item"><a href="./">Обзоры</a></li>
+              </ul>
+            </li>
+            <li><a href="./">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="breadcrumbs">
+      <div class="wrapper">
+        <h1 class="breadcrumbs__title">Проекты</h1>
+        <ul class="breadcrumbs__list">
+          <li><a href="./">Главная</a></li>
+          <li><a href="./">Проекты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bgcolor">
+      <div class="wrapper">
+        <div class="withside withside_not">
+          <main class="withside__content partition">
+            <div class="gallery">
+              <div class="gallery__tabs">
+                <button class="active">Все проекты</button>
+                <button>Автоматизация</button>
+                <button>Охранные системы</button>
+                <button>Системы вентиляции</button>
+                <button>Строительство</button>
+                <button>Электроосвещение</button>
+              </div>
+              <div class="gallery__images">
+                <div class="gallery__phantom" data-tabs="2,4">
+                  <div class="gallery__img"><img src="img/gallery/1.jpg" alt="Видеонаблюдение для бизнес-центра «Калейдоскоп»"></div>
+                  <div class="gallery__imgdescr">Видеонаблюдение для бизнес-центра «Калейдоскоп»</div>
+                </div>
+                <div class="gallery__phantom" data-tabs="2">
+                  <div class="gallery__img"><img src="img/gallery/2.jpg" alt="Контроль доступа на заводе «ГранитСтрой»"></div>
+                  <div class="gallery__imgdescr">Контроль доступа на заводе «ГранитСтрой»</div>
+                </div>
+                <div class="gallery__phantom" data-tabs="1,3">
+                  <div class="gallery__img"><img src="img/gallery/3.jpg" alt="Автоматизация отдела продаж в ООО «Калифорния»"></div>
+                  <div class="gallery__imgdescr">Автоматизация отдела продаж в ООО «Калифорния»</div>
+                </div>
+                <div class="gallery__phantom" data-tabs="4">
+                  <div class="gallery__img"><img src="img/gallery/4.jpg" alt="Строительные работы для ЖК «Африна»"></div>
+                  <div class="gallery__imgdescr">Строительные работы для ЖК «Африна»</div>
+                </div>
+                <div class="gallery__phantom" data-tabs="4,2,3">
+                  <div class="gallery__img"><img src="img/gallery/5.jpg" alt="Отделка фасада музея изобразительных искусств «Мариция»"></div>
+                  <div class="gallery__imgdescr">Отделка фасада музея изобразительных искусств «Мариция»</div>
+                </div>
+                <div class="gallery__phantom" data-tabs="3,4">
+                  <div class="gallery__img"><img src="img/gallery/6.jpg" alt="Система очищения воздуха для кондитерской фабрики «Слада»"></div>
+                  <div class="gallery__imgdescr">Система очищения воздуха для кондитерской фабрики «Слада»</div>
+                </div>
+                <div class="gallery__phantom" data-tabs="5">
+                  <div class="gallery__img"><img src="img/gallery/7.jpg" alt="Торгово-сервисный комплекс «Первый»"></div>
+                  <div class="gallery__imgdescr">Торгово-сервисный комплекс «Первый»</div>
+                </div>
+                <div class="gallery__phantom" data-tabs="3">
+                  <div class="gallery__img"><img src="img/gallery/8.jpg" alt="Система вентиляции для ТРЦ «Солнышко»"></div>
+                  <div class="gallery__imgdescr">Система вентиляции для ТРЦ «Солнышко»</div>
+                </div>
+                <div class="gallery__phantom" data-tabs="2">
+                  <div class="gallery__img"><img src="img/gallery/9.jpg" alt="Установка сигнализации для магазина детских товаров «Бэйби»"></div>
+                  <div class="gallery__imgdescr">Установка сигнализации для магазина детских товаров «Бэйби»</div>
+                </div>
+              </div>
+              <div class="gallery__swiper">
+                <div class="swiper-container">
+                  <div class="gallery__left">
+                    <svg viewBox="0 0 9 16"> 
+                      <use href="#arright"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-wrapper"></div>
+                  <div class="gallery__right">
+                    <svg viewBox="0 0 9 16"> 
+                      <use href="#arright"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
-          </nav>
-          <div class="lnavigation-search"><span class="icon-search">
-              <svg width="512" height="512" x="0" y="0" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 512 512" xml:space="preserve">
-                <g>
-                  <g xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                      <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" fill="#ffffff" data-original="#000000"></path>
-                    </g>
-                  </g>
-                </g>
-              </svg></span></div>
-          <div class="menu-burger"><span></span></div>
+          </main>
         </div>
       </div>
-      <div class="lmain-content">
-        <div class="container lmain-content-item">
-          <div class="row lmain-content-wrap">
-            <div class="lmain-title col-lg-5">
-              <h1>Продвижение <br>							сайтов</h1>
-              <p>Предлагает клиентам полный комплекс услуг по продвижению сайтов. Занимаемся разработкой сайтов любого уровня сложности с нуля и обеспечиваем их выход в ТОП. Благодаря индивидуальному подходу к поиску решения задачи каждому клиенту гарантируется повышение продаж и рентабельности бизнеса.</p><a class="lmain-title-btn popuplink" href="#audit-order">Заказать бесплатный аудит сайта</a>
-            </div>
-            <div class="lmain-advantages col-lg-6">
-              <div class="lmain-advantages-block">
-                <div class="dash-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="192" height="397" fill="none" xmlns:v="https://vecta.io/nano">
-                    <g filter="url(#A)">
-                      <path fill-rule="evenodd" d="M192 .104l-3.492.143.024.499.025.499L192 1.105V.104zm0 395.791l-3.443-.141-.025.499-.024.5 3.492.143v-1.001zM184.541.984l-.035-.499-3.982.317.044.498.045.498 3.963-.316-.035-.499zm-7.938.713l-.055-.497-3.974.478.065.496.064.496 3.955-.475-.055-.497zm-7.904 1.031l-.075-.494-3.954.638.085.493.084.493 3.935-.635-.075-.494zm-7.866 1.35l-.094-.491-3.916.795.104.489.105.489 3.896-.791-.095-.491zm-7.8 1.667l-.115-.487-3.874.952.248.969 3.855-.947-.114-.487zm-7.724 1.981l-.134-.482-3.839 1.11.288.958 3.819-1.104-.134-.482zm-7.636 2.292l-.153-.476-3.794 1.266.326.945 3.774-1.26-.153-.476zm-7.536 2.6l-.172-.469-3.743 1.42.183.466.182.466 3.723-1.413-.173-.469zm-7.429 2.906l-.191-.462-3.679 1.569.402.916 3.66-1.561-.192-.462zm-7.305 3.204l-.21-.454-3.608 1.715.438.899 3.59-1.707-.21-.454zm-10.932 4.911l3.536-1.86.229.445.228.445-3.518 1.85-.237-.44-.238-.44zm-3.255 2.368l-.246-.435-3.46 2.002.51.86 3.443-1.992-.246-.435zm-6.862 4.063l-.263-.425-3.378 2.14.544.839 3.361-2.13-.263-.425zm-10.262 6.197l3.29-2.275.56.828-3.273 2.264-.577-.817zm-2.945 2.741l-.297-.402-3.195 2.404.609.793 3.178-2.392-.297-.403zm-6.324 4.86l-.312-.39-3.095 2.53.641.768 3.079-2.517-.313-.39zM68.7 48.977l-.328-.377-2.991 2.652.671.742 2.976-2.639-.328-.377zm-5.914 5.35l-.343-.364-2.883 2.77.7.714 2.868-2.756-.343-.364zM57.09 59.91l-.357-.35-2.77 2.883.728.686 2.756-2.869-.357-.35zm-8.49 8.462l2.652-2.991.742.671-2.639 2.976-.755-.656zm-2.208 3.365l-.384-.32-2.53 3.095.781.625 2.517-3.079-.384-.32zm-4.985 6.225l-.397-.305-2.404 3.194.805.593 2.392-3.178-.396-.305zm-4.731 6.419l-.408-.288-2.275 3.29.828.561 2.264-3.273-.408-.288zm-4.47 6.605l-.42-.272-2.14 3.378.85.527 2.13-3.361-.42-.272zm-4.201 6.779l-.43-.255-2.002 3.46.871.492 1.992-3.443-.43-.255zm-3.925 6.945l-.44-.238-1.86 3.536.445.229.445.228 1.85-3.518-.44-.237zm-3.64 7.095l-.449-.219-1.715 3.608.454.21.454.211 1.707-3.591-.449-.219zm-3.35 7.235l-.458-.201-1.569 3.679.462.191.462.192 1.561-3.66-.458-.201zm-3.054 7.366l-.466-.183-1.42 3.743.469.172.469.173 1.413-3.723-.466-.182zm-2.754 7.484l-.473-.163-1.266 3.794.476.153.476.154 1.26-3.775-.473-.163zm-2.448 7.591l-.479-.143-1.11 3.838.963.268 1.104-3.819-.479-.144zm-2.139 7.688l-.484-.124-.952 3.874.487.115.487.114.947-3.855-.484-.124zm-1.823 7.759l-.489-.104-.795 3.916.491.094.491.095.791-3.896-.489-.105zm-1.507 7.828l-.493-.085-.638 3.954.989.15.635-3.935-.493-.084zm-1.191 7.884l-.496-.065-.478 3.974.497.055.497.054.475-3.954-.496-.064zm-.873 7.929l-.498-.044-.317 3.982.499.035.499.034.316-3.962-.498-.045zm-.554 7.964l-.499-.024-.158 3.982 1 .03.157-3.963-.499-.025zM0 198.5l.01-2.008 1 .01L1 198.5l.01 1.998-1 .01L0 198.5zm.589 5.995l-.5.015.158 3.982.499-.024.499-.025-.157-3.963-.5.015zm.395 7.964l-.499.035.317 3.982.498-.044.498-.045-.316-3.963-.499.035zm.713 7.938l-.497.055.478 3.974.496-.065.496-.064-.475-3.955-.497.055zm1.031 7.904l-.494.075.638 3.954.493-.085.493-.084-.635-3.935-.494.075zm1.35 7.866l-.491.094.795 3.916.489-.104.489-.105-.791-3.896-.491.095zm1.667 7.8l-.487.115.952 3.874.969-.248-.947-3.855-.487.114zm1.981 7.724l-.482.134 1.11 3.839.958-.288-1.104-3.819-.482.134zm2.292 7.636l-.476.153 1.266 3.794.945-.326-1.26-3.774-.476.153zm3.551 11.451l-1.42-3.743.469-.172.469-.173 1.413 3.723-.466.182-.466.183zm1.955 3.514l-.462.191 1.569 3.679.916-.402-1.561-3.66-.462.192zm3.204 7.305l-.454.21 1.715 3.608.899-.438-1.707-3.59-.454.21zm3.496 7.167l-.445.229 1.86 3.536.44-.238.44-.237-1.85-3.518-.445.228zm3.783 7.02l-.435.246 2.002 3.46.43-.254.43-.255-1.992-3.443-.435.246zm4.063 6.862l-.425.263 2.14 3.378.839-.544-2.13-3.361-.425.264zm6.197 10.262l-2.275-3.29.828-.56 2.264 3.273-.408.289-.408.288zm2.741 2.945l-.402.296 2.404 3.195.793-.61-2.392-3.178-.403.297zm4.86 6.324l-.39.312 2.53 3.095.384-.32.384-.321-2.517-3.079-.39.313zm5.109 6.123l-.377.328 2.652 2.991.742-.67-2.639-2.977-.377.328zm5.35 5.915l-.364.342 2.77 2.883.714-.7-2.756-2.868-.364.343zm5.582 5.695l-.35.357 2.883 2.77.686-.728-2.869-2.756-.35.357zm5.806 5.468l-.335.37 2.991 2.652.328-.377.328-.378-2.976-2.638-.335.371zm6.02 5.23l-.32.384 3.095 2.53.625-.78-3.079-2.518-.32.384zm6.225 4.985l-.305.397 3.194 2.404.297-.402.297-.403-3.178-2.392-.305.396zm6.419 4.732l-.288.408 3.29 2.275.561-.828-3.273-2.264-.288.409zm6.605 4.47l-.272.419 3.378 2.141.527-.85-3.361-2.13-.272.42zm6.779 4.2l-.255.431 3.46 2.002.492-.871-3.443-1.992-.255.43zm6.945 3.925l-.238.44 3.536 1.86.457-.89-3.518-1.85-.237.44zm7.095 3.641l-.219.449 3.608 1.715.21-.453.211-.454-3.591-1.707-.219.45zm7.235 3.35l-.201.458 3.679 1.569.191-.462.192-.462-3.66-1.561-.201.458zm7.366 3.054l-.183.466 3.743 1.42.172-.47.173-.469-3.723-1.413-.182.466zm7.484 2.754l-.163.472 3.794 1.266.307-.951-3.775-1.26-.163.473zm7.591 2.448l-.143.479 3.838 1.11.268-.964-3.819-1.104-.144.479zm7.688 2.138l-.124.485 3.874.952.115-.487.114-.487-3.855-.947-.124.484zm7.759 1.823l-.104.489 3.916.796.094-.491.095-.491-3.896-.792-.105.489zm7.828 1.508l-.085.493 3.954.638.15-.989-3.935-.635-.084.493zm7.884 1.19l-.065.496 3.974.478.055-.497.054-.497-3.954-.475-.064.495zm7.929.873l-.044.498 3.982.317.035-.498.034-.499-3.962-.316-.045.498z" fill="#fff"></path>
-                    </g>
-                    <defs>
-                      <filter id="A" x="-26" y="-25.896" width="244" height="448.791" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0"></feFlood>
-                        <feGaussianBlur in="BackgroundImage" stdDeviation="13"></feGaussianBlur>
-                        <feComposite in2="SourceAlpha" operator="in"></feComposite>
-                        <feBlend in="SourceGraphic">                 </feBlend>
-                      </filter>
-                    </defs>
+    </div>
+    <div class="popup selftrigger">
+      <div class="popup__wrapper">
+        <button class="popup__close close">
+          <svg viewBox="0 0 16 16"> 
+            <use href="#close"></use>
+          </svg>
+        </button>
+        <div class="popup__content"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="subscribe">
+        <div class="wrapper subscribe__wrapper">
+          <svg class="subscribe__icon" viewBox="0 0 70 30"> 
+            <use href="#mailfly"></use>
+          </svg>
+          <div class="subscribe__text">Подписывайтесь на новости и акции:</div>
+          <form class="subscribe__form">
+            <input type="email" placeholder="E-mail" name="email">
+            <input type="submit" value="Подписаться">
+          </form>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="footer__grid">
+          <div class="footlist">
+            <div class="footer__blocktitle showtrigger" data-el=".footlist__list"><a href="./">Компания</a></div>
+            <ul class="footlist__list">
+              <li class="nowrap"><a href="./">О компании</a></li>
+              <li><a href="./">История</a></li>
+              <li><a href="./">Лицензии</a></li>
+              <li><a href="./">Партнеры</a></li>
+              <li><a href="./">Сотрудники</a></li>
+              <li><a href="./">Отзывы</a></li>
+              <li><a href="./">Вакансии</a></li>
+              <li><a href="./">Реквизиты</a></li>
+            </ul>
+          </div>
+          <div class="footlist">
+            <div class="footer__blocktitle showtrigger" data-el=".footlist__list"><a href="./">Каталог</a></div>
+            <ul class="footlist__list"> 
+              <li><a href="./">Аренда спецтехники</a></li>
+              <li><a href="./">Медицинское оборудование</a></li>
+              <li><a href="./">Металлопрокат</a></li>
+              <li><a href="./">Программные продукты</a></li>
+              <li><a href="./">Системы безопасности</a></li>
+              <li><a href="./">Системы вентиляции</a></li>
+              <li><a href="./">Стройматериалы</a></li>
+              <li><a href="./">Дизайнерская мебель</a></li>
+            </ul>
+          </div>
+          <div class="footlist">
+            <div class="footer__blocktitle showtrigger" data-el=".footlist__list"><a href="./">Услуги</a></div>
+            <ul class="footlist__list"> 
+              <li><a href="./">Автоматизация</a></li>
+              <li><a href="./">Аренда спецтехники</a></li>
+              <li><a href="./">Инженерные системы</a></li>
+              <li><a href="./">Металлоконструкции</a></li>
+              <li><a href="./">Отделка фасада</a></li>
+              <li><a href="./">Проектирование</a></li>
+            </ul>
+          </div>
+          <div class="footlist">
+            <div class="footer__blocktitle showtrigger" data-el=".footlist__list"><a href="./">Возможности</a></div>
+            <ul class="footlist__list"> 
+              <li><a href="./">Оформление</a></li>
+              <li><a href="./">Кнопки</a></li>
+              <li><a href="./">Иконки</a></li>
+              <li><a href="./">Элементы</a></li>
+            </ul>
+          </div>
+          <address class="footer__contacts">
+            <div class="footer__blocktitle">Наши контакты</div>
+            <div class="footer__contactscontent">
+              <div class="phoneschedule footer__phoneschedule">
+                <div class="phoneschedule__phone droplist selftrigger">
+                  <svg class="phoneschedule__phoneicon" viewBox="0 0 14 14"> 
+                    <use href="#phone"></use>
+                  </svg><a href="tel:+70000000000" data-descr="Отдел продаж">+7 (000) 000-00-00</a>
+                  <svg class="phoneschedule__downicon" viewBox="0 0 5 2.844"> 
+                    <use href="#tridown"></use>
                   </svg>
+                  <ul class="droplist__list">
+                    <li class="droplist__item"><a class="phoneschedule__phone" href="tel:+70000000001">+7 (000) 000-00-01
+                        <div class="phoneschedule__small">Бухгалтерия</div></a></li>
+                    <li class="droplist__item"><a class="phoneschedule__phone" href="tel:+70000000002">+7 (000) 000-00-02
+                        <div class="phoneschedule__small">Директор</div></a></li>
+                  </ul>
                 </div>
-                <div class="lmain-advantages-item semi-circle-cstm"><img src="assets/images/icon/money.png" alt="img">
-                  <div class="lmain-advantages-item-text"><span>100%</span>
-                    <p>рост вашего <br>										бизнеса</p>
-                  </div>
-                </div>
-                <div class="lmain-advantages-item"><img src="assets/images/icon/saite.png" alt="img">
-                  <div class="lmain-advantages-item-text"><span>500+</span>
-                    <p>кейсов</p>
-                  </div>
-                </div>
-                <div class="lmain-advantages-item semi-circle-cstm"><img src="assets/images/icon/human.png" alt="img">
-                  <div class="lmain-advantages-item-text"><span>100+</span>
-                    <p>постоянных <br>										клиентов</p>
-                  </div>
-                </div>
+                <div class="phoneschedule__small phoneschedule__schedule">Пн-Вс: 10.00 - 19.00</div>
+              </div>
+              <div class="address footer__address">
+                <svg viewBox="0 0 13 16"> 
+                  <use href="#place"></use>
+                </svg><span>Челябинск, ул. Лермонтова 21, 3 этаж, офис 4</span>
+              </div>
+              <div class="mail footer__mail">
+                <svg viewBox="0 0 18 14"> 
+                  <use href="#email"></use>
+                </svg><span>no-reply@aspro-demo.ru</span>
               </div>
             </div>
-          </div>
+          </address>
         </div>
-      </div>
-    </section>
-    <section class="lfixed__menu">
-      <div class="container">
-        <div class="lfixed__menu-items flex"><a class="logo" href="/"><img class="mainlogo" src="assets/images/logo.svg" alt="logo" width="180"></a>
-          <nav class="fixednav">
-            <ul class="reset flex">
-              <li><a href="/">Главная</a></li>
-              <li><a href="/akcii.html">Акции</a></li>
-              <li><a href="/tarifi.html">Тарифы</a></li>
-              <li><a href="/prodvizenie.html">Продвижение</a></li>
-              <li><a href="/audit.html">SEO аудит</a></li>
-              <li><a href="/portfolio.html">Портфолио</a></li>
-              <li><a href="/contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="lheader-items-social">
-            <ul class="reset flex lheader-items-contact-social lsocial">
-              <li><a href="#">
-                  <svg viewBox="0 0 548.358 548.358"> 
-                    <use href="#vk"></use>
-                  </svg></a></li>
-              <li><a href="#">
-                  <svg viewBox="0 0 470.513 470.513"> 
-                    <use href="#face"></use>
-                  </svg></a></li>
-              <li><a href="#">
-                  <svg viewBox="0 0 449.956 449.956"> 
-                    <use href="#twit"></use>
-                  </svg></a></li>
-              <li><a href="#">
-                  <svg viewBox="0 0 511 511.9"> 
-                    <use href="#inst"></use>
-                  </svg></a></li>
-            </ul>
-          </div>
-          <div class="lheader-items-contact">
-            <div class="lheader-items-contact-icon"><img src="assets/images/icon/phone.png" alt="img"></div>
-            <div class="lheader-items-contact-phone"><a href="tel:+79500222294">+7 (950) 022-22-94</a><a href="tel:+78126293122">+7 (812) 629-31-22</a></div>
-          </div>
-          <div class="burger"><span></span></div>
-          <nav class="lnavigation-wrap-main lnavigation-wrap-main_fixed">
-            <div class="lnavigation-group">
-              <ul class="lnavigation-list reset">
-                <li class="lnavigation-item"><a class="lnavigation-item-link active" href="/">Главная</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/akcii.html">Акции</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/tarifi.html">Тарифы</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/prodvizenie.html">Услуги</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/audit.html">SEO аудит</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/portfolio.html">Портфолио</a></li>
-                <li class="lnavigation-item"><a class="lnavigation-item-link" href="/contacts.html">Контакты</a></li>
-              </ul>
-              <ul class="lnavigation-social lsocials">
-                <li><a href="#">
-                    <svg viewBox="0 0 548.358 548.358"> 
-                      <use href="#vk"></use>
-                    </svg></a></li>
-                <li><a href="#">
-                    <svg viewBox="0 0 449.956 449.956"> 
-                      <use href="#twit"></use>
-                    </svg></a></li>
-                <li><a href="#">
-                    <svg viewBox="0 0 470.513 470.513"> 
-                      <use href="#face"></use>
-                    </svg></a></li>
-                <li><a href="#">
-                    <svg viewBox="0 0 511 511.9"> 
-                      <use href="#inst"></use>
-                    </svg></a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </section>
-    <section class="gallery">
-      <div class="container">
-        <h3 class="gallery__title">Галерея</h3>
-        <div class="gallery__grid"><img src="assets/images/gallery/thumb/1.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/2.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/3.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img src="assets/images/gallery/thumb/4.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/5.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/6.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/7.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/8.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/9.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/10.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/11.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"><img class="lazyload" data-src="assets/images/gallery/thumb/12.jpg" data-caption="Описание изображения, достаточно длинное, но не то что бы очень"></div>
-      </div>
-    </section>
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-        </div>
-        <div class="pswp__ui pswp__ui--hidden">
-          <div class="pswp__top-bar">
-            <div class="pswp__counter"></div>
-            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-            <button class="pswp__button pswp__button--share" title="Share"></button>
-            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-            <div class="pswp__share-tooltip"></div>
-          </div>
-          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-          <div class="pswp__caption">
-            <div class="pswp__caption__center"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="lfooter">
-      <div class="container">
-        <div class="lfooter-items flex"><a class="logo" href="/"><img class="mainlogo" src="assets/images/logo.svg" alt="logo" width="180"></a>
-          <ul class="reset flex lfooter-items-nav">
-            <li class="current__item"><a href="/">Главная</a></li>
-            <li><a href="/akcii.html">Акции</a></li>
-            <li><a href="/tarifi.html">Тарифы</a></li>
-            <li><a href="/prodvizenie.html">Услуги</a></li>
-            <li><a href="/audit.html">SEO аудит</a></li>
-            <li><a href="/portfolio.html">Портфолио</a></li>
-            <li><a href="/contacts.html">Контакты</a></li>
-          </ul><a class="lfooter-items-btn popuplink" href="#service-order">Заказать услугу</a>
-        </div>
-        <div class="lfooter-items-sub flex">
-          <div class="lfooter-items-sub-item">© 2020. Все права защищены</div>
-          <div class="lfooter-items-sub-item"><a class="lphone" href="tel:+79500222294">+7 (950) 022-22-94</a></div>
-          <div class="lfooter-items-sub-item"><a class="lwebsite" href="mailto:mail@arenaseo.ru">mail@arenaseo.ru</a></div>
+        <div class="footer__endline"><span>© Аспро: Корпоративный сайт 2.0 </span>
+          <div class="footer__socials"><a class="social social_vk" href="./"></a><a class="social social_face" href="./"></a><a class="social social_twit" href="./"></a><a class="social social_inst" href="./"></a><a class="social social_tele" href="./"></a><a class="social social_youtube" href="./"></a><a class="social social_mates" href="./"></a><a class="social social_mail" href="./"></a></div>
         </div>
       </div>
     </footer>
-    <div class="popup" id="service-order">
-      <div class="popup__body">
-        <div class="popup__content">
-          <div class="popup__load load">
-            <div class="load__accept"> 
-              <svg viewBox="0 0 20 17"> 
-                <use href="#accept"></use>
-              </svg>
-              <div class="load__message">Сообщение успешно отправлено</div>
-              <button class="load__ok">На сайт</button>
-            </div>
-            <div class="load__load">
-              <svg viewBox="0 0 100 100"> 
-                <use href="#load"></use>
-              </svg>
-              <div class="load__message">Идёт отправка...</div>
-            </div>
-            <div class="load__error">
-              <svg viewBox="0 0 25 25"> 
-                <use href="#close"></use>
-              </svg>
-              <div class="load__message"></div>
-              <button class="load__repeat">Попробовать ещё раз</button>
-            </div>
-          </div><span class="icon-close close-popup">
-            <svg viewBox="0 0 25 25">
-              <use href="#close"></use>
-            </svg></span>
-          <div class="popup__content-main">
-            <h3 class="popup__title">Заказать услугу</h3>
-            <form method="post" onsubmit="send(event, 'send.php', 's')">
-              <input type="text" name="name" placeholder="Ваше имя *" autocomplete="off" required>
-              <input type="email" name="email" placeholder="E-mail адрес *" required>
-              <input type="tel" name="tel" placeholder="Телефон">
-              <input type="text" name="site" placeholder="arenaseo.ru" value="https://" autocomplete="off">
-              <select id="sselect" name="service">
-                <option value="Выбрать услугу">Выбрать услугу</option>
-                <option value="Аудит сайта">Аудит сайта</option>
-                <option value="Продвижение сайта по трафику">Продвижение сайта по трафику</option>
-                <option value="Продвижение сайта по трафику">Продвижение сайта по трафику</option>
-                <option value="Продвижение сайта в яндексе">Продвижение сайта в яндексе</option>
-                <option value="Продвижение портала">Продвижение портала</option>
-                <option value="Продвижение сайта по факту">Продвижение сайта по факту</option>
-                <option value="Продвижение сайта по позициям">Продвижение сайта по позициям</option>
-                <option value="Продвижение молодого сайта">Продвижение молодого сайта</option>
-                <option value="Продвижение лендинга">Продвижение лендинга</option>
-                <option value="Продвижение сайта в гугл">Продвижение сайта в гугл</option>
-                <option value="Продвижение интернет-магазина">Продвижение интернет-магазина</option>
-              </select>
-              <textarea name="message" placeholder="Комментарий к заказу"></textarea>
-              <input type="submit" value="Отправить">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="popup" id="audit-order">
-      <div class="popup__body">
-        <div class="popup__content">
-          <div class="popup__load load">
-            <div class="load__accept"> 
-              <svg viewBox="0 0 20 17"> 
-                <use href="#accept"></use>
-              </svg>
-              <div class="load__message">Сообщение успешно отправлено</div>
-              <button class="load__ok">На сайт</button>
-            </div>
-            <div class="load__load">
-              <svg viewBox="0 0 100 100"> 
-                <use href="#load"></use>
-              </svg>
-              <div class="load__message">Идёт отправка...</div>
-            </div>
-            <div class="load__error">
-              <svg viewBox="0 0 25 25"> 
-                <use href="#close"></use>
-              </svg>
-              <div class="load__message"></div>
-              <button class="load__repeat">Попробовать ещё раз</button>
-            </div>
-          </div><span class="icon-close close-popup">
-            <svg viewBox="0 0 25 25">
-              <use href="#close"></use>
-            </svg></span>
-          <div class="popup__content-main">
-            <h3 class="popup__title"><span class="nowrap">Заявка на </span><span class="nowrap">аудит сайта</span></h3>
-            <form method="post" onsubmit="send(event, 'send.php', 'a')">
-              <input type="text" name="name" placeholder="Ваше имя *" autocomplete="off" required>
-              <input type="email" name="email" placeholder="E-mail адрес *" required>
-              <input type="text" name="site" placeholder="arenaseo.ru" value="https://" autocomplete="off">
-              <textarea name="message" placeholder="Сообщение / вопрос"></textarea>
-              <input type="submit" value="Отправить">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="assets/js/lazysizes.min.js"></script>
-    <script src="assets/js/photoswipe.min.js"></script>
-    <script src="assets/js/gallery.js"></script>
-    <script src="assets/js/header+popups+footer.js"></script>
-    <!-- Yandex.Metrika counter-->
-    <script type="text/javascript">
-      var fired = false;
-      function metrika(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}
-      var callMetrika = function(){
-        metrika(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(73352524, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
-      }
-      
-      window.addEventListener('scroll', ()=> {
-        if (fired) return;
-        else {
-          fired = true;
-          callMetrika();
-        }}, { passive: true })
-      document.addEventListener('click', ()=> {
-        if (fired) return;
-        else {
-          fired = true;
-          callMetrika();
-        }})
-        setTimeout(()=>fired?false:callMetrika(), 2000);
-    </script>
-    <noscript>
-      <div><img src="https://mc.yandex.ru/watch/73352524" style="position:absolute; left:-9999px;" alt=""></div>
-    </noscript>
-    <!-- /Yandex.Metrika counter-->
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
