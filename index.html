@@ -1,358 +1,1130 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Вёрстка</title>
+    <title>title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="./fonts/Montserrat/700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./fonts/Montserrat/400.woff2" as="font" type="font/woff2" crossorigin>
     <link href="./css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <svg class="icons" width="0" height="0">
-      <symbol id="docline" fill="none" viewbox="0 0 116 116">
-        <path d="M40 47h36M40 58h36M40 77.5h16m-27-41v59h14.5M29 36.5h16v-17m-16 17l16-17m0 0h17m14.5 0H87v76H58" stroke="#250708" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M48 104l23-92" stroke="#E9041E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      <symbol id="ring" viewbox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="10" stroke-width="4"> </circle>
       </symbol>
-      <symbol id="docpencil" fill="none" viewbox="0 0 116 116">
-        <path d="M40 47h36M40 58h27M40 77.5h16m-27-41v59h58v-25m-58-34h16v-17m-16 17l16-17m0 0h42v17" stroke="#250708" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M95 51v3L72 77l-9 1 1-9 23-23h3m5 5h3l5-5-8-8-5 5v3m5 5l-5-5" stroke="#E9041E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      <symbol id="download" fill="none" viewbox="0 0 22 21">
+        <path d="M1 20h20m-10-2V1m0 17l-3-3m3 3l3-3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> </path>
       </symbol>
-      <symbol id="question" fill="none" viewbox="0 0 116 116">
-        <path d="M16 53.333C16 35 34.9 20 58 20s42 15 42 33.333c0 18.334-18.9 33.334-42 33.334-5.04 0-10.08-.834-14.7-2.084-7.98 6.25-17.22 10-27.3 10.417 10.08-9.583 11.76-16.25 11.76-18.75C20.62 70.833 16 62.5 16 53.333zM92 50c0-10.5-16-23-30-23" stroke="#250708" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M55.72 60.684c-.168-1.092-.14-2.072.084-2.94a10.59 10.59 0 011.008-2.436c.42-.756.896-1.456 1.428-2.1a42.357 42.357 0 001.554-1.89 11.9 11.9 0 001.176-1.932 4.472 4.472 0 00.504-2.1c0-1.12-.35-2.072-1.05-2.856-.672-.812-1.68-1.218-3.024-1.218-.924 0-1.806.224-2.646.672a7.225 7.225 0 00-2.184 1.764l-1.974-1.806a11.556 11.556 0 013.108-2.478c1.204-.672 2.576-1.008 4.116-1.008 2.128 0 3.822.602 5.082 1.806 1.288 1.176 1.932 2.814 1.932 4.914 0 .924-.168 1.764-.504 2.52a11.02 11.02 0 01-1.26 2.142 32.468 32.468 0 01-1.554 2.016 27.014 27.014 0 00-1.512 2.016 9.3 9.3 0 00-1.05 2.268c-.252.784-.322 1.666-.21 2.646H55.72zm1.596 8.82c-.7 0-1.288-.238-1.764-.714-.476-.504-.714-1.134-.714-1.89 0-.812.238-1.456.714-1.932a2.33 2.33 0 011.764-.756c.7 0 1.288.252 1.764.756.504.476.756 1.12.756 1.932 0 .756-.252 1.386-.756 1.89-.476.476-1.064.714-1.764.714z" fill="#E9041E"></path>
+      <symbol id="check" fill="none" viewbox="0 0 16 14">
+        <path d="M2 8l4 4 8-10" stroke="#E9041E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"> </path>
       </symbol>
-      <symbol id="shield" fill="none" viewbox="0 0 116 116">
-        <path d="M25 22.463C45.825 25.446 57 16 57 16s11.175 9.446 32 6.463V68.68C89 88.566 66.143 97.514 57 100c-9.143-2.486-32-11.434-32-31.32V22.463z" stroke="#250708" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M57 23s-5.5 7.5-26 6.463V66.68C31 84 49.572 90.514 57 93" stroke="#250708" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M44 57l9 9 23-23" stroke="#E9041E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      <symbol id="addfile" viewbox="0 0 49 48" fill="none">
+        <path fill="#F7F7F7" d="M.5 0h48v48H.5z"></path>
+        <path d="M11.5 4h-3a2 2 0 00-2 2v39a2 2 0 002 2h28a2 2 0 002-2v-2" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M32.5 1h-18a2 2 0 00-2 2v38a2 2 0 002 2h26a2 2 0 002-2V11m-10-10l10 10m-10-10v8a2 2 0 002 2h8" stroke="#250708" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M27.5 20v5m0 5v-5m0 0h-5m5 0h5" stroke="#E9041E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </symbol>
-      <symbol id="arleft" fill="none" viewbox="0 0 28 46">
-        <path d="M25 43L5 23 25 3"></path>
+      <symbol id="doc" fill="none" viewbox="0 0 34 48">
+        <path d="M23 1H3a2 2 0 00-2 2v42a2 2 0 002 2h28a2 2 0 002-2V11M23 1l10 10M23 1v8a2 2 0 002 2h8" stroke="#250708" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </symbol>
-      <symbol id="arright" fill="none" viewbox="0 0 28 46">
-        <path d="M3 43l20-20L3 3"></path>
+      <symbol id="close" viewbox="0 0 14 14" fill="none">
+        <path d="M1 1l12 12M1 13c.267 0 8.111-8 12-12" stroke="#797979" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </symbol>
-      <symbol id="arright2" viewbox="0 0 31 20">
-        <path d="M29 9H0v2h29V9z"></path>
-        <path d="M19.6 1.4L27.1 9v2l-7.5 7.6L21 20l10-10L21 0l-1.4 1.4z"></path>
+      <symbol id="edit" viewbox="0 0 24 24" fill="none">
+        <path fill="#fff" d="M0 0h24v24H0z"></path>
+        <path d="M19 12.125V18a2 2 0 01-2 2H7a2 2 0 01-2-2V8a2 2 0 012-2h6" stroke="#797979" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M17 6l-5.5 5.5L11 14l2.5-.5L19 8m-2-2l1-1a1.414 1.414 0 012 0v0a1.414 1.414 0 010 2l-1 1m-2-2l2 2" stroke="#797979" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </symbol>
-      <symbol id="call" fill="none" viewbox="0 0 116 116">
-        <path d="M42.058 51.398l.584-.473a8.894 8.894 0 001.398-12.408l-6.213-7.907a6.828 6.828 0 00-9.11-1.493c-8.233 5.394-10.21 16.614-4.317 24.497l8.779 11.744A86.38 86.38 0 0050.642 82.82l11.743 8.78c7.884 5.893 19.104 3.915 24.498-4.317a6.828 6.828 0 00-1.493-9.11l-7.907-6.214a8.894 8.894 0 00-12.408 1.398l-.473.584" stroke="#250708" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M78 50c0-7.732-6.268-14-14-14m31 14c0-17.12-13.88-31-31-31" stroke="#E9041E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M31.5 33L40 43m32 32l10 8.5" stroke="#250708" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      <symbol id="trash" viewbox="0 0 24 24" fill="none">
+        <path fill="#fff" d="M0 0h24v24H0z"></path>
+        <path d="M10 9v8m4-8v8M5 7h14m-9-2h4M7 7h10v12H7V7z" stroke="#797979" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </symbol>
-      <symbol id="doc" fill="none" viewbox="0 0 116 116">
-        <path d="M25 41v59h58V24H41M25 41h16V24M25 41l16-17" stroke="#250708" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M49 18h42v75" stroke="#E9041E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M36 51h36M36 62h36M36 82h16" stroke="#250708" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      <symbol id="ardown" viewbox="0 0 12 7" fill="none">
+        <path d="M1 1l5 5 5-5" stroke="#797979" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </symbol>
-      <symbol id="docarrow" fill="none" viewbox="0 0 116 116">
-        <path d="M40 47h36M40 77.5h16m-27-41v59h58v-19m-58-40h16v-17m-16 17l16-17m0 0h42v19" stroke="#250708" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M40 58h55m0 0L84 47m11 11L84 69" stroke="#E9041E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      <symbol id="save" viewbox="0 0 22 22" fill="none">
+        <path d="M11 14V3a2 2 0 012-2h6a2 2 0 012 2v16a2 2 0 01-2 2H3a2 2 0 01-2-2V1m10 13l-3-3m3 3l3-3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </symbol>
+      <symbol id="height" viewbox="0 0 54 54" fill="none">
+        <path fill="#fff" d="M0 0h54v54H0z"></path>
+        <path d="M13 51V36.07a2 2 0 00-.89-1.664l-1.09-.726a2 2 0 01-.877-1.898l1.441-12.25A4 4 0 0115.557 16h4.886a4 4 0 013.973 3.533l1.44 12.25a2 2 0 01-.876 1.897l-1.09.726A2 2 0 0023 36.07V51M22 8c0 2.21-1 5-4 5s-4-2.79-4-5a4 4 0 018 0z" stroke="#250708" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M44 3h-6v6m6 42h-6V39m0-12h6m-6 0V15m0 12v12m0-24h6m-6 0V9m0 30h6M38 9h3m-3 12h3m-3 12h3m-3 12h3" stroke="#E9041E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </symbol>
+      <symbol id="weight" viewbox="0 0 54 54" fill="none">
+        <path fill="#fff" d="M0 0h54v54H0z"></path>
+        <path d="M13 51V36.07a2 2 0 00-.89-1.664l-1.09-.726a2 2 0 01-.877-1.898l1.441-12.25A4 4 0 0115.557 16h4.886a4 4 0 013.973 3.533l1.44 12.25a2 2 0 01-.876 1.897l-1.09.726A2 2 0 0023 36.07V51" stroke="#250708" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <circle cx="40" cy="23" r="7" stroke="#E9041E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+        <path d="M22 8c0 2.21-1 5-4 5s-4-2.79-4-5a4 4 0 018 0z" stroke="#250708" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M40 30v21" stroke="#E9041E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M40 23l3-3" stroke="#250708" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M28 51h16" stroke="#250708" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
       </symbol>
     </svg>
-    <main>
-      <section class="hero">
-        <button class="hero__prev">
-          <svg viewBox="0 0 28 46"> 
-            <use href="#arleft"></use>
-          </svg>
-        </button>
-        <div class="hero__swiper swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide heroslide">
-              <div class="heroslide__img">
-                <picture>
-                  <source type="image/webp" srcset="img/hero/hero.webp"><img src="img/hero/hero.jpg" alt="Росбанк страхование">
-                </picture>
-              </div>
-              <div class="heroslide__content">
-                <h1 class="heroslide__title">Росбанк страхование</h1>
-                <p class="heroslide__subtitle">Комплексное<br>ипотечное страхование</p><a class="btn" href="./">Оформить онлайн</a>
-              </div>
-            </div>
-            <div class="swiper-slide heroslide">
-              <div class="heroslide__img">
-                <picture>
-                  <source type="image/webp" data-srcset="img/hero/hero.webp"><img class="lazyload" data-src="img/hero/hero.jpg" alt="Росбанк страхование">
-                </picture>
-              </div>
-              <div class="heroslide__content">
-                <h1 class="heroslide__title">Росбанк страхование</h1>
-                <p class="heroslide__subtitle">Комплексное<br>ипотечное страхование</p><a class="btn" href="./">Оформить онлайн</a>
-              </div>
-            </div>
-            <div class="swiper-slide heroslide">
-              <div class="heroslide__img">
-                <picture>
-                  <source type="image/webp" data-srcset="img/hero/hero.webp"><img class="lazyload" data-src="img/hero/hero.jpg" alt="Росбанк страхование">
-                </picture>
-              </div>
-              <div class="heroslide__content">
-                <h1 class="heroslide__title">Росбанк страхование</h1>
-                <p class="heroslide__subtitle">Комплексное<br>ипотечное страхование</p><a class="btn" href="./">Оформить онлайн</a>
-              </div>
-            </div>
+    <section class="formzone">
+      <div class="wrapper wrapper_big formzone__wrapper">
+        <div class="formzone__headzone">
+          <div class="formzone__logo"><img src="img/logo.png" alt="Росбанк"></div>
+          <div class="formzone__steps" aria-hidden="true">
+            <ul class="formzone__stepgroup">
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step1">Общие сведения</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step2">Заявление</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step3">Личность Страхователя</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step4">Личность Созаемщика</span></div>
+              </li>
+            </ul>
+            <div class="formzone__stepgrouptitle">Анкета</div>
+            <ul class="formzone__stepgroup">
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step5">Общие сведения</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step6">Паспортные данные</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step7">Занятость</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step8">Условия выплаты</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step9">Проверка данных</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step10">Паспортные данные</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step11">Занятость</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step12">Дополнительные вопросы</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step13">Состояние здоровья</span></div>
+              </li>
+              <li class="step">
+                <div class="step__icon">
+                  <svg viewBox="0 0 24 24"> 
+                    <use href="#ring"></use>
+                  </svg>
+                </div>
+                <div class="step__namewrapper"><span class="step__name" id="step14">Завершение</span></div>
+              </li>
+            </ul>
+            <li class="step"></li>
           </div>
         </div>
-        <button class="hero__next">
-          <svg viewBox="0 0 28 46"> 
-            <use href="#arright"></use>
-          </svg>
-        </button>
-      </section>
-      <section class="categories">
-        <div class="wrapper">
-          <h2 class="categories__title">Категории</h2>
-          <ul class="categories__list">
-            <li>
-              <button class="category" data-id="1">Жизнь и здоровье</button>
-            </li>
-            <li>
-              <button class="category" data-id="2">Инвестиции и накопления</button>
-            </li>
-            <li>
-              <button class="category" data-id="3">Квартира, дом и личные вещи</button>
-            </li>
-            <li>
-              <button class="category" data-id="4">Карты и счета</button>
-            </li>
-            <li>
-              <button class="category" data-id="5">Для авто</button>
-            </li>
-          </ul>
-        </div>
-        <div class="wrapper wrapper_wide">
-          <div class="categories__swiper swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide catslide catslide_deepteal" data-catid="1,2">
-                <div class="catslide__content">
-                  <h3 class="catslide__title">МОЯ МАКСИМАЛЬНАЯ ЗАЩИТА</h3>
-                  <p class="catslide__subtitle">Программа комплексой защиты</p><a class="catslide__link" href="./">Подробнее</a>
-                </div>
-                <div class="catslide__img">
-                  <picture>
-                    <source type="image/webp" data-srcset="img/categories/def.webp"><img class="lazyload" data-src="img/categories/def.jpg" alt="МОЯ МАКСИМАЛЬНАЯ ЗАЩИТА">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide catslide catslide_indigo" data-catid="2">
-                <div class="catslide__content">
-                  <h3 class="catslide__title">МОЙ<br>НАДЕЖНЫЙ ДОМ</h3>
-                  <p class="catslide__subtitle">Комплексное страхование квартиры и дома</p><a class="catslide__link" href="./">Подробнее</a>
-                </div>
-                <div class="catslide__img">
-                  <picture>
-                    <source type="image/webp" data-srcset="img/categories/home.webp"><img class="lazyload" data-src="img/categories/home.jpg" alt="МОЙ&lt;br&gt;НАДЕЖНЫЙ ДОМ">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide catslide catslide_dark" data-catid="1,3">
-                <div class="catslide__content">
-                  <h3 class="catslide__title">МИР ЗДОРОВЬЯ</h3>
-                  <p class="catslide__subtitle">Финансовая и медицинская поддержка</p><a class="catslide__link" href="./">Подробнее</a>
-                </div>
-                <div class="catslide__img">
-                  <picture>
-                    <source type="image/webp" data-srcset="img/categories/health.webp"><img class="lazyload" data-src="img/categories/health.jpg" alt="МИР ЗДОРОВЬЯ">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide catslide catslide_water" data-catid="4">
-                <div class="catslide__content">
-                  <h3 class="catslide__title">ПРЕМЬЕР ИНВЕСТ</h3>
-                  <p class="catslide__subtitle">Комплексная финансовая программа, сочетающая преимущества инвестирования в мировую экономику</p><a class="catslide__link" href="./">Подробнее</a>
-                </div>
-                <div class="catslide__img">
-                  <picture>
-                    <source type="image/webp" data-srcset="img/categories/invest.webp"><img class="lazyload" data-src="img/categories/invest.jpg" alt="ПРЕМЬЕР ИНВЕСТ">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide catslide catslide_swamp" data-catid="2,5">
-                <div class="catslide__content">
-                  <h3 class="catslide__title">ПРЕМЬЕР ЛАЙФ</h3>
-                  <p class="catslide__subtitle">Комплексная финансовая программа, сочетающая преимущества инвестирования в мировую экономику</p><a class="catslide__link" href="./">Подробнее</a>
-                </div>
-                <div class="catslide__img">
-                  <picture>
-                    <source type="image/webp" data-srcset="img/categories/life.webp"><img class="lazyload" data-src="img/categories/life.jpg" alt="ПРЕМЬЕР ЛАЙФ">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide catslide catslide_dust" data-catid="1,3,5">
-                <div class="catslide__content">
-                  <h3 class="catslide__title">МОЯ ЛИЧНАЯ ЗАЩИТА</h3>
-                  <p class="catslide__subtitle">Комплексное страхование от несчастных случаев и непоправимых событий</p><a class="catslide__link" href="./">Подробнее</a>
-                </div>
-                <div class="catslide__img">
-                  <picture>
-                    <source type="image/webp" data-srcset="img/categories/personal.webp"><img class="lazyload" data-src="img/categories/personal.jpg" alt="МОЯ ЛИЧНАЯ ЗАЩИТА">
-                  </picture>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="swiper-controls">
-            <div class="swiper-controls__prev">
-              <svg viewBox="0 0 28 46"> 
-                <use href="#arleft"></use>
-              </svg>
-            </div>
-            <div class="swiper-controls__nav swiper-controls__nav_nospace"></div>
-            <div class="swiper-controls__next">
-              <svg viewBox="0 0 31 20"> 
-                <use href="#arright2"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="forclient">
-        <div class="wrapper">
-          <h2>Для клиента</h2>
-          <div class="forclient__swiper">
-            <div class="swiper-container">
-              <div class="swiper-wrapper"><a class="swiper-slide card" href="./">
-                  <h3 class="card__title">Страховое событие</h3>
-                  <p class="card__subtitle">Что делать при наступлении страхового события</p>
-                  <div class="card__icon">
-                    <svg class="card__icon" viewBox="0 0 116 116"> 
-                      <use href="#shield"></use>
-                    </svg>
-                  </div></a><a class="swiper-slide card" href="./">
-                  <h3 class="card__title">Контакты</h3>
-                  <p class="card__subtitle">Фактический адрес офиса<br>и телефон</p>
-                  <div class="card__icon">
-                    <svg class="card__icon" viewBox="0 0 116 116"> 
-                      <use href="#call"></use>
-                    </svg>
-                  </div></a><a class="swiper-slide card" href="./">
-                  <h3 class="card__title">Задать свой вопрос</h3>
-                  <p class="card__subtitle">Написать нам по любым вопросам связанным со страхованием </p>
-                  <div class="card__icon">
-                    <svg class="card__icon" viewBox="0 0 116 116"> 
-                      <use href="#question"></use>
-                    </svg>
-                  </div></a><a class="swiper-slide card" href="./">
-                  <h3 class="card__title">Реквизиты</h3>
-                  <p class="card__subtitle">Для оплаты полисов<br>ипотечного страхования</p>
-                  <div class="card__icon">
-                    <svg class="card__icon" viewBox="0 0 116 116"> 
-                      <use href="#doc"></use>
-                    </svg>
-                  </div></a><a class="swiper-slide card" href="./">
-                  <h3 class="card__title">Заявить страховое событие</h3>
-                  <p class="card__subtitle">Сообщить о наступлении<br>страхового события</p>
-                  <div class="card__icon">
-                    <svg class="card__icon" viewBox="0 0 116 116"> 
-                      <use href="#docpencil"></use>
-                    </svg>
-                  </div></a><a class="swiper-slide card" href="./">
-                  <h3 class="card__title">Расторгнуть договор страхования</h3>
-                  <p class="card__subtitle">Подать заявку<br>на расторжение договора</p>
-                  <div class="card__icon">
-                    <svg class="card__icon" viewBox="0 0 116 116"> 
-                      <use href="#docline"></use>
-                    </svg>
-                  </div></a><a class="swiper-slide card" href="./">
-                  <h3 class="card__title">Продлить договор страхования</h3>
-                  <p class="card__subtitle">Подать заявку<br>на продление договора</p>
-                  <div class="card__icon">
-                    <svg class="card__icon" viewBox="0 0 116 116"> 
-                      <use href="#docarrow"></use>
-                    </svg>
-                  </div></a>
-              </div>
-            </div>
-            <div class="swiper-controls">
-              <div class="swiper-controls__prev">
-                <svg viewBox="0 0 28 46"> 
-                  <use href="#arleft"></use>
-                </svg>
-              </div>
-              <div class="swiper-controls__nav swiper-controls__nav_small"></div>
-              <div class="swiper-controls__next">
-                <svg viewBox="0 0 31 20"> 
-                  <use href="#arright2"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about">
-        <div class="wrapper">
-          <ul class="about__list">
-            <li class="data">
-              <div class="data__title">15 лет</div>
-              <div class="data__subtitle">в России</div>
-            </li>
-            <li class="data">
-              <div class="data__title">№8</div>
-              <div class="data__subtitle">по страхованию жизни в 2020</div>
-            </li>
-            <li class="data">
-              <div class="data__title">ТОП 20</div>
-              <div class="data__subtitle">крупнейших страховых компаний в 2020</div>
-            </li>
-            <li class="data">
-              <div class="data__title">600 000+</div>
-              <div class="data__subtitle">клиентов в 2020</div>
-            </li>
-          </ul>
-          <p class="about__text"><strong>Росбанк Страхование</strong> - часть группы страховых компаний Societe Generale Assurance, которая относится к международной финансовой Группе Societe Generale, является одним из основных игроков на рынке банковского страхования во Франции, занимает седьмое место по страхованию жизни в России.</p>
-          <p class="about__text about__text_small"> В России под брендом Росбанк Страхование представлены два юридических лица ООО «СОСЬЕТЕ ЖЕНЕРАЛЬ Страхование Жизни»<br>и ООО «СОСЬЕТЕ ЖЕНЕРАЛЬ Страхование».</p><a class="btn" href="./">УЗНАТЬ ПОДРОБНЕЕ</a>
-        </div>
-      </section>
-      <section class="promises">
-        <div class="wrapper">
-          <h2>Наши обещания клиентам</h2>
-          <div class="promises__swiper">
-            <div class="swiper-container">
+        <div class="formzone__content">
+          <div class="formzone__contentwrapper">
+            <form class="form swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide promise">
-                  <div class="promise__title promise__title_number">1</div>
-                  <p class="promise__text">Мы работаем<br>для защиты вашего<br>благосостояния</p>
+                <!---->
+                <div class="swiper-slide formslide" role="group" aria-labelledby="step1">
+                  <fieldset>
+                    <legend>Возможно, мы знакомы</legend>
+                    <div class="select">
+                      <select required="true" name="isourclient">
+                        <option value="Нет">Нет</option>
+                        <option value="Росбанк Дом">Росбанк Дом</option>
+                        <option value="Дельта кредит">Дельта кредит</option>
+                        <option value="Росбанк">Росбанк</option>
+                        <option value="Другой банк">Другой банк</option>
+                      </select>
+                      <div class="select__wrapper">
+                        <div class="select__main">
+                          <div class="select__text"></div><span class="select__label">Вы являетесь клиентом Росбанка?*</span>
+                          <svg viewBox="0 0 12 7"> 
+                            <use href="#ardown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="select__droplist" role="listbox"></ul>
+                    </div>
+                    <div class="select">
+                      <select required="true" name="reason">
+                        <option value="Ранее был расторгнут договор с компанией Росбанк Страхование по данному ипотечному договору">Ранее был расторгнут договор с компанией Росбанк Страхование по данному ипотечному договору</option>
+                        <option value="Впервые обращаюсь за сменой страховщика по данному ипотечному договору" data-activate="estimation">Впервые обращаюсь за сменой страховщика по данному ипотечному договору</option>
+                      </select>
+                      <div class="select__wrapper">
+                        <div class="select__main">
+                          <div class="select__text"></div><span class="select__label">Причина обращения*</span>
+                          <svg viewBox="0 0 12 7"> 
+                            <use href="#ardown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="select__droplist" role="listbox"></ul>
+                    </div>
+                    <div class="select select_last ">
+                      <select required="true" name="insuranceproduct">
+                        <option value="Страхование Жизни">Страхование Жизни</option>
+                        <option value="Страхование Жизни и Недвижимости" data-activate="estimation">Страхование Жизни и Недвижимости</option>
+                      </select>
+                      <div class="select__wrapper">
+                        <div class="select__main">
+                          <div class="select__text"></div><span class="select__label">Страховой продукт*</span>
+                          <svg viewBox="0 0 12 7"> 
+                            <use href="#ardown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="select__droplist" role="listbox"></ul>
+                    </div>
+                    <div class="form__group appearing estimation" data-showon="2">
+                      <div class="form__grouptitle">Необходимо прикрепить отчёт об оценке</div>
+                      <div class="form__filezone">
+                        <div class="droparea" data-ext="pdf jpg png">
+                          <input class="required" type="file" multiple="multiple" name="report" tabindex="-1">
+                          <svg viewBox="0 0 49 48"> 
+                            <use href="#addfile"></use>
+                          </svg>
+                          <div class="droparea__text"><span class="active">Нажмите</span> или перетащите файл в область для загрузки*</div>
+                        </div>
+                        <p class="smallfont">Отчет об оценке может быть в формате электронного документа <span class="ext">(pdf) </span>или фото/скан <span class="ext">(jpg, png) </span>каждой страницы отдельно. Объем прикрепляемого файла <span class="size"> </span><span class="size">не больше 1Мб</span></p>
+                      </div>
+                    </div>
+                  </fieldset>
                 </div>
-                <div class="swiper-slide promise">
-                  <div class="promise__title promise__title_number">2</div>
-                  <p class="promise__text">Наше отношение<br>к вам–уважительное и открытое</p>
+                <div class="swiper-slide formslide" role="group" aria-labelledby="step2">
+                  <div class="form__group">
+                    <div class="form__grouptitle">Скачать заявление</div>
+                    <p class="form__text">Необходимо скачать и заполнить заявление (в электронном или бумажном виде). Заявление требуется подписать, отсканировать/сфотографировать и загрузить.</p>
+                    <div class="form__action form__action_mobcenter">
+                      <div class="file">
+                        <div class="doc">
+                          <svg viewBox="0 0 34 48"> 
+                            <use href="#doc"></use>
+                          </svg>
+                          <div class="doc__type">doc</div>
+                        </div>
+                        <div class="file__descr">
+                          <div class="file__name">Заявление</div>
+                          <div class="file__size">271 KB</div>
+                        </div>
+                      </div>
+                      <button class="btn btn_icon btn_shrink">
+                        <svg viewBox="0 0 22 21"> 
+                          <use href="#download"></use>
+                        </svg><span>Скачать</span>
+                      </button>
+                    </div>
+                    <div class="form__action">
+                      <p class="form__text">Вы можете отправить заявления для печати на личный e-mail</p>
+                      <label class="linp"> <span class="linp__text">E-mail для отправки</span> 
+                        <input class="inp" type="mail" name="mail@mail.ru" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
+                      </label>
+                      <button class="form__actionbtn btn btn_shrink">Отправить</button>
+                    </div>
+                  </div>
+                  <div class="form__group">
+                    <div class="form__grouptitle">Прикрепите подписаное завление</div>
+                    <div class="form__filezone">
+                      <div class="droparea" data-ext="jpg png">
+                        <input class="required" type="file" multiple="multiple" tabindex="-1">
+                        <svg viewBox="0 0 49 48"> 
+                          <use href="#addfile"></use>
+                        </svg>
+                        <div class="droparea__text"><span class="active">Нажмите</span> или перетащите файл в область для загрузки*</div>
+                      </div>
+                      <p class="smallfont">Отчет об оценке может быть в формате электронного документа <span class="ext">(pdf) </span>или фото/скан <span class="ext">(jpg, png) </span>каждой страницы отдельно. Объем прикрепляемого файла <span class="size"> </span><span class="size">не больше 1Мб</span></p>
+                    </div>
+                  </div>
                 </div>
-                <div class="swiper-slide promise">
-                  <div class="promise__title promise__title_number">3</div>
-                  <p class="promise__text">Отвечаем быстро<br>и по существу</p>
+                <div class="swiper-slide formslide" role="group" aria-labelledby="step3">
+                  <fieldset class="hidecontrol">
+                    <legend>Документ, удостоверяющий личность «Страхователя»</legend>
+                    <div class="select">
+                      <select required="true" name="clientdoctype">
+                        <option value="Паспорт РФ">Паспорт РФ</option>
+                        <option value="Паспорт Белоруссии">Паспорт Белоруссии</option>
+                        <option value="Паспорт иностранного гражданина">Паспорт иностранного гражданина</option>
+                      </select>
+                      <div class="select__wrapper">
+                        <div class="select__main">
+                          <div class="select__text"></div><span class="select__label">Тип документа, удостоверяющего личность*</span>
+                          <svg viewBox="0 0 12 7"> 
+                            <use href="#ardown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="select__droplist" role="listbox"></ul>
+                    </div>
+                    <p class="form__text">Необходимо сделать скан или фотографию заполненных страницы паспорта и загрузить</p>
+                  </fieldset>
+                  <div class="form__group hidecontrol"> 
+                    <div class="form__grouptitle form__grouptitle_small">Первая страница паспорта</div>
+                    <div class="form__filezone">
+                      <div class="droparea autohide" data-ext="jpg png">
+                        <input class="required" type="file" tabindex="-1">
+                        <svg viewBox="0 0 49 48"> 
+                          <use href="#addfile"></use>
+                        </svg>
+                        <div class="droparea__text"><span class="active">Нажмите</span> или перетащите файл в область для загрузки*</div>
+                      </div>
+                      <p class="smallfont">«Первая страница» паспорта в формате электронного документа фото/скан <span class="ext">(jpg, png)</span>. Объем прикрепляемого файла <span class="size">не больше 1Мб </span></p>
+                    </div>
+                  </div>
+                  <div class="form__group hidecontrol">
+                    <div class="form__grouptitle form__grouptitle_small">Страница с регистрацией</div>
+                    <div class="form__filezone">
+                      <div class="droparea autohide" data-ext="jpg png">
+                        <input class="required" type="file" tabindex="-1">
+                        <svg viewBox="0 0 49 48"> 
+                          <use href="#addfile"></use>
+                        </svg>
+                        <div class="droparea__text"><span class="active">Нажмите</span> или перетащите файл в область для загрузки*</div>
+                      </div>
+                      <p class="smallfont">«Страница с регистрацией» паспорта в формате электронного документа фото/скан <span class="ext">(jpg, png)</span>. Объем прикрепляемого файла <span class="size">не больше 1Мб </span></p>
+                    </div>
+                  </div>
+                  <div class="form__group hidecontrol">
+                    <div class="form__grouptitle form__grouptitle_small">Дополнительный файл</div>
+                    <div class="form__filezone">
+                      <div class="droparea autohide" data-ext="jpg png">
+                        <input type="file" tabindex="-1">
+                        <svg viewBox="0 0 49 48"> 
+                          <use href="#addfile"></use>
+                        </svg>
+                        <div class="droparea__text"><span class="active">Нажмите</span> или перетащите файл в область для загрузки*</div>
+                      </div>
+                      <p class="smallfont">Формат электронного документа фото/скан <span class="ext">(jpg, png)</span>. Объем прикрепляемого файла <span class="size">не больше 1Мб</span></p>
+                    </div>
+                  </div>
+                  <div class="form__group">
+                    <div class="form__grouptitle form__grouptitle_small">Дополнительный файл</div>
+                    <div class="form__filezone">
+                      <div class="droparea autohide" data-ext="jpg png">
+                        <input type="file" tabindex="-1">
+                        <svg viewBox="0 0 49 48"> 
+                          <use href="#addfile"></use>
+                        </svg>
+                        <div class="droparea__text"><span class="active">Нажмите</span> или перетащите файл в область для загрузки*</div>
+                      </div>
+                      <p class="smallfont">Формат электронного документа фото/скан <span class="ext">(jpg, png)</span>. Объем прикрепляемого файла <span class="size">не больше 1Мб</span></p>
+                    </div>
+                  </div>
                 </div>
-                <div class="swiper-slide promise">
-                  <div class="promise__title promise__title_number">4</div>
-                  <p class="promise__text">Мы упрощаем наши процессы и развиваем каналы коммуникации</p>
+                <div class="swiper-slide formslide" role="group" aria-labelledby="step4">
+                  <fieldset class="hidecontrol"> 
+                    <legend>Документ, удостоверяющий личность «Созаемщика»</legend>
+                    <div class="select">
+                      <select required="true" name="coborrowerdoctype">
+                        <option value="Паспорт РФ">Паспорт РФ</option>
+                        <option value="Паспорт Белоруссии">Паспорт Белоруссии</option>
+                        <option value="Паспорт иностранного гражданина">Паспорт иностранного гражданина</option>
+                      </select>
+                      <div class="select__wrapper">
+                        <div class="select__main">
+                          <div class="select__text"></div><span class="select__label">Тип документа, удостоверяющего личность*</span>
+                          <svg viewBox="0 0 12 7"> 
+                            <use href="#ardown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="select__droplist" role="listbox"></ul>
+                    </div>
+                    <p class="form__text">Необходимо сделать скан или фотографию заполненных страницы паспорта и загрузить</p>
+                  </fieldset>
+                  <div class="form__group hidecontrol"> 
+                    <div class="form__grouptitle form__grouptitle_small">Первая страница паспорта</div>
+                    <div class="form__filezone">
+                      <div class="droparea autohide" data-ext="jpg png">
+                        <input class="required" type="file" tabindex="-1">
+                        <svg viewBox="0 0 49 48"> 
+                          <use href="#addfile"></use>
+                        </svg>
+                        <div class="droparea__text"><span class="active">Нажмите</span> или перетащите файл в область для загрузки*</div>
+                      </div>
+                      <p class="smallfont">«Первая страница» паспорта в формате электронного документа фото/скан <span class="ext">(jpg, png)</span>. Объем прикрепляемого файла <span class="size">не больше 1Мб </span></p>
+                    </div>
+                  </div>
+                  <div class="form__group hidecontrol">
+                    <div class="form__grouptitle form__grouptitle_small">Страница с регистрацией</div>
+                    <div class="form__filezone">
+                      <div class="droparea autohide" data-ext="jpg png">
+                        <input class="required" type="file" tabindex="-1">
+                        <svg viewBox="0 0 49 48"> 
+                          <use href="#addfile"></use>
+                        </svg>
+                        <div class="droparea__text"><span class="active">Нажмите</span> или перетащите файл в область для загрузки*</div>
+                      </div>
+                      <p class="smallfont">«Страница с регистрацией» паспорта в формате электронного документа фото/скан <span class="ext">(jpg, png)</span>. Объем прикрепляемого файла <span class="size">не больше 1Мб </span></p>
+                    </div>
+                  </div>
+                  <div class="form__group hidecontrol">
+                    <div class="form__grouptitle form__grouptitle_small">Дополнительный файл</div>
+                    <div class="form__filezone">
+                      <div class="droparea autohide" data-ext="jpg png">
+                        <input type="file" tabindex="-1">
+                        <svg viewBox="0 0 49 48"> 
+                          <use href="#addfile"></use>
+                        </svg>
+                        <div class="droparea__text"><span class="active">Нажмите</span> или перетащите файл в область для загрузки*</div>
+                      </div>
+                      <p class="smallfont">Формат электронного документа фото/скан <span class="ext">(jpg, png)</span>. Объем прикрепляемого файла <span class="size">не больше 1Мб</span></p>
+                    </div>
+                  </div>
+                  <div class="form__group">
+                    <div class="form__grouptitle form__grouptitle_small">Дополнительный файл</div>
+                    <div class="form__filezone">
+                      <div class="droparea autohide" data-ext="jpg png">
+                        <input type="file" tabindex="-1">
+                        <svg viewBox="0 0 49 48"> 
+                          <use href="#addfile"></use>
+                        </svg>
+                        <div class="droparea__text"><span class="active">Нажмите</span> или перетащите файл в область для загрузки*</div>
+                      </div>
+                      <p class="smallfont">Формат электронного документа фото/скан <span class="ext">(jpg, png)</span>. Объем прикрепляемого файла <span class="size">не больше 1Мб</span></p>
+                    </div>
+                  </div>
                 </div>
-                <div class="swiper-slide promise">
-                  <div class="promise__title promise__title_number">5</div>
-                  <p class="promise__text">Держим вас в курсе:<br>вовремя информируем<br>о самом важном</p>
+                <div class="swiper-slide formslide" role="group" aria-labelledby="step5">
+                  <fieldset>
+                    <legend>Ваши инициалы и пол</legend>
+                    <label class="linp"> <span class="linp__text">Фамилия*</span> 
+                      <input class="inp" type="text" name="clientsurname" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Имя*</span> 
+                      <input class="inp" type="text" name="clientname" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Отчество*</span> 
+                      <input class="inp" type="text" name="clientpatronymic')(class='form__bigspace" required>
+                    </label>
+                    <div class="form__twofields form__bigspace">
+                      <div class="select">
+                        <select required="true" name="clientsex">
+                          <option value="Мужской">Мужской</option>
+                          <option value="Женский">Женский</option>
+                        </select>
+                        <div class="select__wrapper">
+                          <div class="select__main">
+                            <div class="select__text"></div><span class="select__label">Пол*</span>
+                            <svg viewBox="0 0 12 7"> 
+                              <use href="#ardown"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <ul class="select__droplist" role="listbox"></ul>
+                      </div>
+                    </div>
+                    <fieldset>
+                      <legend>Адрес регистрации/местонахождения  </legend>
+                      <label class="linp"> <span class="linp__text">Индекс*</span> 
+                        <input class="inp" type="number" name="clientindex" required>
+                      </label>
+                      <label class="linp"> <span class="linp__text">Город / Населенный пункт*</span> 
+                        <input class="inp" type="text" name="clientcity" required>
+                      </label>
+                      <label class="linp"> <span class="linp__text">Улица*</span> 
+                        <input class="inp" type="text" name="clientstreet" required>
+                      </label>
+                      <div class="form__twofields">
+                        <label class="linp"> <span class="linp__text">Дом*</span> 
+                          <input class="inp" type="text" name="clienthouse" required>
+                        </label>
+                        <label class="linp"> <span class="linp__text">Корпус*</span> 
+                          <input class="inp" type="text" name="clientcorp" required>
+                        </label>
+                      </div>
+                      <div class="form__twofields">
+                        <label class="linp"> <span class="linp__text">Квартира*</span> 
+                          <input class="inp" type="text" name="clientflat" required>
+                        </label>
+                        <label class="linp"> <span class="linp__text">Комната*</span> 
+                          <input class="inp" type="text" name="clientroom" required>
+                        </label>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Адрес фактического проживания / для почтовой корреспонденции совпадает с адресом регистрации?</legend>
+                      <label class="linp"> <span class="linp__text">Индекс*</span> 
+                        <input class="inp" type="number" name="clientrealindex" required>
+                      </label>
+                      <label class="linp"> <span class="linp__text">Город / Населенный пункт*</span> 
+                        <input class="inp" type="text" name="clientrealcity" required>
+                      </label>
+                      <label class="linp"> <span class="linp__text">Улица*</span> 
+                        <input class="inp" type="text" name="clientrealstreet" required>
+                      </label>
+                      <div class="form__twofields">
+                        <label class="linp"> <span class="linp__text">Дом*</span> 
+                          <input class="inp" type="text" name="clientrealhouse" required>
+                        </label>
+                        <label class="linp"> <span class="linp__text">Корпус*</span> 
+                          <input class="inp" type="text" name="clientrealcorp" required>
+                        </label>
+                      </div>
+                      <div class="form__twofields">
+                        <label class="linp"> <span class="linp__text">Квартира*</span> 
+                          <input class="inp" type="text" name="clientrealflat" required>
+                        </label>
+                        <label class="linp"> <span class="linp__text">Комната*</span> 
+                          <input class="inp" type="text" name="clientrealroom" required>
+                        </label>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Дата и место рождения</legend>
+                      <label class="linp"> <span class="linp__text">Дата*</span> 
+                        <input class="inp" type="date" name="clientbirthdate" required>
+                      </label>
+                      <label class="linp"> <span class="linp__text">Место рождения*</span> 
+                        <input class="inp" type="text" name="clientbirthplace" required>
+                      </label>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Контактные номера , адрес электронной почты</legend>
+                      <label class="linp"> <span class="linp__text">Мобильный телефон*</span> 
+                        <input class="inp" type="tel" name="clientmobphone" required data-mask="+7 (###) ###-##-##" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                      </label>
+                      <div class="addphone" data-for="client">
+                        <button class="addphone__btn"> </button>
+                        <div class="addphone__text">Добавить телефон</div>
+                      </div>
+                      <label class="linp"> <span class="linp__text">Домашний телефон*</span> 
+                        <input class="inp" type="tel" name="clienthomephone" required>
+                      </label>
+                      <label class="linp"> <span class="linp__text">Служебный телефон*</span> 
+                        <input class="inp" type="tel" name="clientworkphone" required data-mask="+7 (###) ###-##-##" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                      </label>
+                      <label class="linp"> <span class="linp__text">Электронная почта*</span> 
+                        <input class="inp" type="mail" name="clientmail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
+                      </label>
+                    </fieldset>
+                  </fieldset>
                 </div>
+                <div class="swiper-slide formslide" role="group" aria-labelledby="step6">
+                  <fieldset>
+                    <legend>Паспортные данные </legend>
+                    <label class="linp"> <span class="linp__text">Серия и номер*</span> 
+                      <input class="inp" type="text" name="undefinedpassport" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Кем выдан*</span> 
+                      <input class="inp" type="text" name="undefinedpassportissued" required>
+                    </label>
+                    <div class="form__twofields">
+                      <label class="linp"> <span class="linp__text">Дата выдачи*</span> 
+                        <input class="inp" type="date" name="undefinedpassportdate" required>
+                      </label>
+                      <label class="linp"> <span class="linp__text">ИНН*</span> 
+                        <input class="inp" type="number" name="undefinedINN" required>
+                      </label>
+                    </div>
+                    <div class="form__twofields">
+                      <label class="linp"> <span class="linp__text">Гражданство*</span> 
+                        <input class="inp" type="text" name="undefinedcitizenship" required>
+                      </label>
+                      <div class="select">
+                        <select required="true" name="undefinedmarital">
+                          <option value="В браке">В браке</option>
+                          <option value="Не в браке">Не в браке</option>
+                        </select>
+                        <div class="select__wrapper">
+                          <div class="select__main">
+                            <div class="select__text"></div><span class="select__label">Семейное положение*</span>
+                            <svg viewBox="0 0 12 7"> 
+                              <use href="#ardown"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <ul class="select__droplist" role="listbox"></ul>
+                      </div>
+                    </div>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="specialundefined" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Являетесь ли вы иностранным публичным должностным лицом, его супругом, близким родственником (родственником по прямой восходящей или нисходящей линии (родителем или ребенком, дедушкой, бабушкой или внуком), полнородными или неполнородными (имеющим общего отца или мать) братом или сестрой, усыновителем или усыновленным)?</span>
+                    </label>
+                  </fieldset>
+                </div>
+                <div class="swiper-slide formslide" role="group" aria-labelledby="step7">
+                  <fieldset>
+                    <legend>Сведения о занятости страхователя</legend>
+                    <div class="select">
+                      <select required="true" name="policyholderjobtype">
+                        <option value="Работа по найму">Работа по найму</option>
+                        <option value="Собственник бизнеса">Собственник бизнеса</option>
+                      </select>
+                      <div class="select__wrapper">
+                        <div class="select__main">
+                          <div class="select__text"></div><span class="select__label">Настоящее место работы*</span>
+                          <svg viewBox="0 0 12 7"> 
+                            <use href="#ardown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="select__droplist" role="listbox"></ul>
+                    </div>
+                    <label class="linp"> <span class="linp__text">Наименование*</span> 
+                      <input class="inp" type="text" name="policyholderjobname" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Должность*</span> 
+                      <input class="inp" type="text" name="policyholderjobposition" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Юридический адрес*</span> 
+                      <input class="inp" type="text" name="policyholderjoblegaladress" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Рабочий телефон*</span> 
+                      <input class="inp" type="tel" name="policyholderworkphone" required data-mask="+7 (###) ###-##-##" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                    </label>
+                  </fieldset>
+                </div>
+                <div class="swiper-slide formslide" role="group" aria-labelledby="step8">
+                  <div class="form__group">
+                    <div class="form__grouptitle">Выгодоприобретатель</div>
+                    <p class="form__text">Выгодоприобретатель 1 - Росбанк Дом - в части страховой выплаты в размере суммы остатка ссудной задолженности Страхователя по Кредитному договору/Договору займа на дату наступления страхового случая.</p>
+                    <p class="form__text">Выгодоприобретатель 2 - Страхователь (Застрахованные лица и/или наследники (в случае смерти Застрахованных лиц), либо иное лицо, назначенное по распоряжению Застрахованных лиц/лица – в части страховой выплаты, превышающей сумму остатка  ссудной задолженности по Кредитному договору/Договору займа на дату наступления страхового случая.</p>
+                    <p class="form__text">Выгодоприобретатель на получение страховой выплаты назначен по воле Страхователя.</p>
+                  </div>
+                  <fieldset>
+                    <legend>ФИО Заемщика по кредитному договору / договору займа</legend>
+                    <label class="linp"> <span class="linp__text">Фамилия*</span> 
+                      <input class="inp" type="text" name="debtorsurname" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Имя*</span> 
+                      <input class="inp" type="text" name="debtorname" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Отчество*</span> 
+                      <input class="inp" type="text" name="debtorpatronymic" required>
+                    </label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Паспортные данные Заемщика</legend>
+                    <label class="linp"> <span class="linp__text">Серия и номер*</span> 
+                      <input class="inp" type="text" name="debtorpassport" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Кем выдан*</span> 
+                      <input class="inp" type="text" name="debtorpassportissued" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Дата выдачи*</span> 
+                      <input class="inp" type="date" name="debtorpassportdate" required>
+                    </label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Размер кредита / займа либо текущая ссудная задолженность Заемщика</legend>
+                    <div class="form__twofields">
+                      <label class="linp"> <span class="linp__text">Сумма*</span> 
+                        <input class="inp" type="number" name="debtsize" required>
+                      </label>
+                      <div class="select">
+                        <select required="true" name="currency">
+                          <option value="₽">₽</option>
+                          <option value="$">$</option>
+                          <option value="€">€</option>
+                        </select>
+                        <div class="select__wrapper">
+                          <div class="select__main">
+                            <div class="select__text"></div><span class="select__label">Валюта*</span>
+                            <svg viewBox="0 0 12 7"> 
+                              <use href="#ardown"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <ul class="select__droplist" role="listbox"></ul>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Ставка и срок кредита / займа</legend>
+                    <div class="form__twofields">
+                      <label class="linp linp_longlabel"> <span class="linp__text">Текущая процентная ставка по кредиту / займу</span> 
+                        <input class="inp" type="text" name="debtrate">
+                      </label>
+                      <label class="linp"> <span class="linp__text">Срок кредита / займа</span> 
+                        <input class="inp" type="text" name="debtperiod">
+                      </label>
+                    </div>
+                    <div class="select select_short">
+                      <select required="" name="debtcoborrower">
+                        <option value="Да" data-activate="coborrower">Да</option>
+                        <option value="Нет">Нет</option>
+                      </select>
+                      <div class="select__wrapper">
+                        <div class="select__main">
+                          <div class="select__text"></div><span class="select__label">Есть Созаёмщик по кредиту?</span>
+                          <svg viewBox="0 0 12 7"> 
+                            <use href="#ardown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="select__droplist" role="listbox"></ul>
+                    </div>
+                    <div class="selectoption appearing coborrower" data-showon="1">
+                      <label class="linp"> <span class="linp__text">Фамилия Имя Отчество</span> 
+                        <input class="inp" type="text" name="coborrowerfullname">
+                      </label>
+                      <label class="linp"> <span class="linp__text">Дата рождения</span> 
+                        <input class="inp" type="date" name="coborrowerbirthdate">
+                      </label>
+                    </div>
+                    <div class="select select_short">
+                      <select required="" name="debtguarantor">
+                        <option value="Да" data-activate="guarantor">Да</option>
+                        <option value="Нет">Нет</option>
+                      </select>
+                      <div class="select__wrapper">
+                        <div class="select__main">
+                          <div class="select__text"></div><span class="select__label">Есть Поручитель по кредиту?</span>
+                          <svg viewBox="0 0 12 7"> 
+                            <use href="#ardown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="select__droplist" role="listbox"></ul>
+                    </div>
+                    <div class="selectoption appearing guarantor" data-showon="1">
+                      <label class="linp"> <span class="linp__text">Фамилия Имя Отчество</span> 
+                        <input class="inp" type="text" name="guarantorfullname">
+                      </label>
+                      <label class="linp"> <span class="linp__text">Дата рождения</span> 
+                        <input class="inp" type="date" name="guarantorbirthdate">
+                      </label>
+                    </div>
+                  </fieldset>
+                  <div class="form__group">
+                    <div class="form__grouptitle">Представители страхователя</div>
+                    <fieldset>
+                      <legend class="form__grouptitle form__grouptitle_small">В кредитной организации</legend>
+                      <label class="linp"> <span class="linp__text">Фамилия Имя Отчество</span> 
+                        <input class="inp" type="text" name="creditinstfullname">
+                      </label>
+                      <label class="linp"> <span class="linp__text">Телефон</span> 
+                        <input class="inp" type="tel" name="creditinstphone" data-mask="+7 (###) ###-##-##" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                      </label>
+                    </fieldset>
+                    <fieldset>
+                      <legend class="form__grouptitle form__grouptitle_small">Риэлтор/ипотечный брокер</legend>
+                      <label class="linp"> <span class="linp__text">Фамилия Имя Отчество</span> 
+                        <input class="inp" type="text" name="realtorfullname">
+                      </label>
+                      <label class="linp"> <span class="linp__text">Телефон</span> 
+                        <input class="inp" type="tel" name="realtorphone" data-mask="+7 (###) ###-##-##" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                      </label>
+                    </fieldset>
+                  </div>
+                  <label class="linp linp_checkbox">  
+                    <input type="checkbox" name="dataisvalid" required tabindex="-1">
+                    <div class="inp inp_checkbox">
+                      <svg viewBox="0 0 16 14"> 
+                        <use href="#check"></use>
+                      </svg>
+                    </div><span class="linp__text">Сведения, внесенные мной или от моего имени в настоящее Заявление (включая Приложения) соответствуют действительности и будут являться частью Договора страхования. Согласен с тем, что на основании сообщенных мною сведений Страховщик имеет право произвести индивидуальную оценку риска (рисков), принимаемого (-ых) на страхование, с применением необходимых поправочных коэффициентов к базовой тарифной ставке.*</span>
+                  </label>
+                  <fieldset>
+                    <legend class="form__grouptitle form__grouptitle_small">Прошу осуществить страхование <span class="nowrap">(отмечайте любым доступным способом):</span></legend>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="realtyinsurance" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Недвижимого имущества, являющегося предметом ипотеки от рисков гибели (уничтожения), утраты, повреждения; </span>
+                    </label>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="deathinsurance" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Рисков смерти, потери трудоспособности; </span>
+                    </label>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="realtyrightsinsurance" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Риска утраты недвижимого имущества в результате  прекращения права собственности,  риска ограничения (обременения) права собственности Страхователя (Залогодателя) на недвижимое имущество;</span>
+                    </label>
+                  </fieldset>
+                  <label class="linp linp_checkbox">  
+                    <input type="checkbox" name="agreementprocessingdata" tabindex="-1">
+                    <div class="inp inp_checkbox">
+                      <svg viewBox="0 0 16 14"> 
+                        <use href="#check"></use>
+                      </svg>
+                    </div><span class="linp__text">В соответствии с Федеральным законом от 27 июля 2006 г. № 152-ФЗ «О персональных данных» даю свое согласие на автоматизированную и неавтоматизированную обработку моих персональных данных: фамилия, имя, отчество, год, месяц, дата и место рождения, паспортные данные, гражданство, адрес проживания, сведения о занятости, сведения о семейном положении, сведения об объекте недвижимости, а также иные данные, указанные в настоящем Приложении к заявлению на страхование и заключаемом со Страховщиком договоре страхования, которые могут быть отнесены в соответствии с законодательством РФ к персональным данным в целях исполнения договора страхования, сбора и анализа статистических данных, а также:</span>
+                  </label>
+                  <label class="linp linp_checkbox">  
+                    <input type="checkbox" name="agreementinforming" tabindex="-1">
+                    <div class="inp inp_checkbox">
+                      <svg viewBox="0 0 16 14"> 
+                        <use href="#check"></use>
+                      </svg>
+                    </div><span class="linp__text">Информирования о страховой организации ООО «СОСЬЕТЕ ЖЕНЕРАЛЬ Страхование» и ООО «СОСЬЕТЕ ЖЕНЕРАЛЬ Страхование Жизни</span>
+                  </label>
+                  <label class="linp linp_checkbox">  
+                    <input type="checkbox" name="agreementinsurancequalitycontrol" tabindex="-1">
+                    <div class="inp inp_checkbox">
+                      <svg viewBox="0 0 16 14"> 
+                        <use href="#check"></use>
+                      </svg>
+                    </div><span class="linp__text">Проверки качества оказания страховых услуг</span>
+                  </label>
+                  <p class="form__text">Перечень действий с персональными данными, в отношении которых дано мое согласие, включает: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, обезличивание, блокирование, уничтожение персональных данных, передачу персональных данных в сторонние организации в том числе, в другие страховые (перестраховочные) организации при осуществлении перестрахования (в том числе на трансграничную передачу); в организации, осуществляющие проверку деятельности Страховщика в соответствии с действующим законодательством; в соответствующие организации и компетентные органы при урегулировании убытков.</p>
+                  <p class="form__text">Согласие действует на период действия договора страхования, неотъемлемой частью которого является настоящее заявление и на протяжении 5 лет после его прекращения и может быть отозвано мною посредством направления в адрес страховой компании письменного уведомления.</p>
+                  <fieldset>
+                    <legend class="form__grouptitle form__grouptitle_small">Приложения, являющиеся неотъемлемой частью настоящего Заявления:</legend>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="appendix1.1" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Приложение № 1.1. Страхование от несчастных случаев и болезней</span>
+                    </label>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="appendix1.2" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Приложение № 1.2 Страхование от несчастных случаев и болезней (заполняется при необходимости)</span>
+                    </label>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="appendix1.3" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Приложение № 1.3 Страхование от несчастных случаев и болезней (заполняется при необходимости)</span>
+                    </label>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="appendix1.4" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Приложение № 1.4 Страхование от несчастных случаев и болезней (заполняется при необходимости)</span>
+                    </label>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="appendix2" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Приложение № 2. Страхование недвижимого имущества</span>
+                    </label>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="appendix3" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Приложение № 3. Страхование риска прекращения или ограничения (обременения) права собственности </span>
+                    </label>
+                  </fieldset>
+                </div>
+                <div class="swiper-slide formslide" role="group" aria-labelledby="step9">
+                  <div class="form__group"> 
+                    <div class="form__grouptitle">Сведения о застрахованном лице совпадают со страхователем?</div>
+                    <div class="form__twofields">
+                      <label class="linp linp_checkbox"> <span class="linp__text">Да, совпадают</span>
+                        <input class="copier" type="radio" name="dataidentical" required value="yes" data-namefrom="client" data-nameto="policyholder" data-slidefrom="4">
+                        <div class="inp inp_checkbox">
+                          <svg viewBox="0 0 16 14"> 
+                            <use href="#check"></use>
+                          </svg>
+                        </div>
+                      </label>
+                      <label class="linp linp_checkbox"> <span class="linp__text">Нет, не совпадают</span>
+                        <input class="undisabler" type="radio" name="dataidentical" required value="no">
+                        <div class="inp inp_checkbox">
+                          <svg viewBox="0 0 16 14"> 
+                            <use href="#check"></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                    <fieldset>
+                      <legend>Ваши инициалы и пол</legend>
+                      <label class="linp"> <span class="linp__text">Фамилия*</span> 
+                        <input class="inp" type="text" name="policyholdersurname" required>
+                      </label>
+                      <label class="linp"> <span class="linp__text">Имя*</span> 
+                        <input class="inp" type="text" name="policyholdername" required>
+                      </label>
+                      <label class="linp"> <span class="linp__text">Отчество*</span> 
+                        <input class="inp" type="text" name="policyholderpatronymic')(class='form__bigspace" required>
+                      </label>
+                      <div class="form__twofields form__bigspace">
+                        <div class="select">
+                          <select required="true" name="policyholdersex">
+                            <option value="Мужской">Мужской</option>
+                            <option value="Женский">Женский</option>
+                          </select>
+                          <div class="select__wrapper">
+                            <div class="select__main">
+                              <div class="select__text"></div><span class="select__label">Пол*</span>
+                              <svg viewBox="0 0 12 7"> 
+                                <use href="#ardown"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <ul class="select__droplist" role="listbox"></ul>
+                        </div>
+                      </div>
+                      <fieldset>
+                        <legend>Адрес регистрации/местонахождения  </legend>
+                        <label class="linp"> <span class="linp__text">Индекс*</span> 
+                          <input class="inp" type="number" name="policyholderindex" required>
+                        </label>
+                        <label class="linp"> <span class="linp__text">Город / Населенный пункт*</span> 
+                          <input class="inp" type="text" name="policyholdercity" required>
+                        </label>
+                        <label class="linp"> <span class="linp__text">Улица*</span> 
+                          <input class="inp" type="text" name="policyholderstreet" required>
+                        </label>
+                        <div class="form__twofields">
+                          <label class="linp"> <span class="linp__text">Дом*</span> 
+                            <input class="inp" type="text" name="policyholderhouse" required>
+                          </label>
+                          <label class="linp"> <span class="linp__text">Корпус*</span> 
+                            <input class="inp" type="text" name="policyholdercorp" required>
+                          </label>
+                        </div>
+                        <div class="form__twofields">
+                          <label class="linp"> <span class="linp__text">Квартира*</span> 
+                            <input class="inp" type="text" name="policyholderflat" required>
+                          </label>
+                          <label class="linp"> <span class="linp__text">Комната*</span> 
+                            <input class="inp" type="text" name="policyholderroom" required>
+                          </label>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <legend>Адрес фактического проживания / для почтовой корреспонденции совпадает с адресом регистрации?</legend>
+                        <label class="linp"> <span class="linp__text">Индекс*</span> 
+                          <input class="inp" type="number" name="policyholderrealindex" required>
+                        </label>
+                        <label class="linp"> <span class="linp__text">Город / Населенный пункт*</span> 
+                          <input class="inp" type="text" name="policyholderrealcity" required>
+                        </label>
+                        <label class="linp"> <span class="linp__text">Улица*</span> 
+                          <input class="inp" type="text" name="policyholderrealstreet" required>
+                        </label>
+                        <div class="form__twofields">
+                          <label class="linp"> <span class="linp__text">Дом*</span> 
+                            <input class="inp" type="text" name="policyholderrealhouse" required>
+                          </label>
+                          <label class="linp"> <span class="linp__text">Корпус*</span> 
+                            <input class="inp" type="text" name="policyholderrealcorp" required>
+                          </label>
+                        </div>
+                        <div class="form__twofields">
+                          <label class="linp"> <span class="linp__text">Квартира*</span> 
+                            <input class="inp" type="text" name="policyholderrealflat" required>
+                          </label>
+                          <label class="linp"> <span class="linp__text">Комната*</span> 
+                            <input class="inp" type="text" name="policyholderrealroom" required>
+                          </label>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <legend>Дата и место рождения</legend>
+                        <label class="linp"> <span class="linp__text">Дата*</span> 
+                          <input class="inp" type="date" name="policyholderbirthdate" required>
+                        </label>
+                        <label class="linp"> <span class="linp__text">Место рождения*</span> 
+                          <input class="inp" type="text" name="policyholderbirthplace" required>
+                        </label>
+                      </fieldset>
+                      <fieldset>
+                        <legend>Контактные номера , адрес электронной почты</legend>
+                        <label class="linp"> <span class="linp__text">Мобильный телефон*</span> 
+                          <input class="inp" type="tel" name="policyholdermobphone" required data-mask="+7 (###) ###-##-##" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                        </label>
+                        <div class="addphone" data-for="policyholder">
+                          <button class="addphone__btn"> </button>
+                          <div class="addphone__text">Добавить телефон</div>
+                        </div>
+                        <label class="linp"> <span class="linp__text">Домашний телефон*</span> 
+                          <input class="inp" type="tel" name="policyholderhomephone" required>
+                        </label>
+                        <label class="linp"> <span class="linp__text">Служебный телефон*</span> 
+                          <input class="inp" type="tel" name="policyholderworkphone" required data-mask="+7 (###) ###-##-##" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                        </label>
+                        <label class="linp"> <span class="linp__text">Электронная почта*</span> 
+                          <input class="inp" type="mail" name="policyholdermail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
+                        </label>
+                      </fieldset>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="swiper-slide formslide" role="group" aria-labelledby="step10">
+                  <fieldset>
+                    <legend>Паспортные данные </legend>
+                    <label class="linp"> <span class="linp__text">Серия и номер*</span> 
+                      <input class="inp" type="text" name="undefinedpassport" required>
+                    </label>
+                    <label class="linp"> <span class="linp__text">Кем выдан*</span> 
+                      <input class="inp" type="text" name="undefinedpassportissued" required>
+                    </label>
+                    <div class="form__twofields">
+                      <label class="linp"> <span class="linp__text">Дата выдачи*</span> 
+                        <input class="inp" type="date" name="undefinedpassportdate" required>
+                      </label>
+                      <label class="linp"> <span class="linp__text">ИНН*</span> 
+                        <input class="inp" type="number" name="undefinedINN" required>
+                      </label>
+                    </div>
+                    <div class="form__twofields">
+                      <label class="linp"> <span class="linp__text">Гражданство*</span> 
+                        <input class="inp" type="text" name="undefinedcitizenship" required>
+                      </label>
+                      <div class="select">
+                        <select required="true" name="undefinedmarital">
+                          <option value="В браке">В браке</option>
+                          <option value="Не в браке">Не в браке</option>
+                        </select>
+                        <div class="select__wrapper">
+                          <div class="select__main">
+                            <div class="select__text"></div><span class="select__label">Семейное положение*</span>
+                            <svg viewBox="0 0 12 7"> 
+                              <use href="#ardown"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <ul class="select__droplist" role="listbox"></ul>
+                      </div>
+                    </div>
+                    <label class="linp linp_checkbox">  
+                      <input type="checkbox" name="specialundefined" tabindex="-1">
+                      <div class="inp inp_checkbox">
+                        <svg viewBox="0 0 16 14"> 
+                          <use href="#check"></use>
+                        </svg>
+                      </div><span class="linp__text">Являетесь ли вы иностранным публичным должностным лицом, его супругом, близким родственником (родственником по прямой восходящей или нисходящей линии (родителем или ребенком, дедушкой, бабушкой или внуком), полнородными или неполнородными (имеющим общего отца или мать) братом или сестрой, усыновителем или усыновленным)?</span>
+                    </label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Cтраховая сумма в валюте кредита/займа </legend>
+                    <div class="form__twofiels">
+                      <label class="linp"> <span class="linp__text">Сумма*</span> 
+                        <input class="inp" type="number" name="insurance sum" required>
+                      </label>
+                      <div class="select">
+                        <select required="true" name="insurance currency">
+                          <option value="₽">₽</option>
+                          <option value="$">$</option>
+                          <option value="€">€</option>
+                        </select>
+                        <div class="select__wrapper">
+                          <div class="select__main">
+                            <div class="select__text"></div><span class="select__label">Валюта*</span>
+                            <svg viewBox="0 0 12 7"> 
+                              <use href="#ardown"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <ul class="select__droplist" role="listbox"></ul>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="form__group">
+                    <div class="form__grouptitle">% страхования от остатка ссудной задолженности на момент заключения договора</div>
+                    <label class="linp"> <span class="linp__text">Остаток ссудной задлолженности*</span> 
+                      <input class="inp" type="number" name="outstanding balance" required>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="formzone__controls">
+              <button class="btn btn_shrink btn_white btn_hiding formzone__prev">Назад</button>
+              <button class="btn btn_shrink formzone__next disabled">Далее</button>
+            </div>
+            <div class="formzone__bar bar">
+              <div class="bar__percent">0</div>
+              <div class="bar__space">
+                <div class="bar__line"></div>
               </div>
             </div>
-            <div class="swiper-controls">
-              <div class="swiper-controls__prev">
-                <svg viewBox="0 0 28 46"> 
-                  <use href="#arleft"></use>
-                </svg>
-              </div>
-              <div class="swiper-controls__nav swiper-controls__nav_small"></div>
-              <div class="swiper-controls__next">
-                <svg viewBox="0 0 31 20"> 
-                  <use href="#arright2"></use>
-                </svg>
-              </div>
+            <div class="formzone__bottom">
+              <p class="smalltext">*  Поля обязательные для заполнения</p>
+              <button class="btn btn_shrink btn_white btn_icon">
+                <svg viewBox="0 0 22 22"> 
+                  <use href="#save"></use>
+                </svg><span>Сохранить</span>
+              </button>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
     <script src="./js/libs.min.js"></script>
     <script src="./js/script.min.js"></script>
   </body>
